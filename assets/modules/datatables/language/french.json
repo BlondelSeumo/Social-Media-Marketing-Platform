@@ -1,0 +1,21 @@
+{
+	"sEmptyTable":     "aucune donnée disponible",	
+	"sInfoFiltered":   "(filtré du nombre total d'entrées _MAX_)",
+	"sInfoPostFix":    "",
+	"sInfoThousands":  ",",
+	"sLoadingRecords": "Chargement...",
+	"sProcessing":     "En traitement...",
+	"sZeroRecords":    "Aucun enregistrements correspondants trouvés",
+	"oPaginate": {
+		"sFirst":    "Première",
+		"sLast":     "Dernière",
+		"sNext":     "Prochain",
+		"sPrevious": "Précédente"
+	},
+	"pSearch": "Chercher",
+	"oAria": {
+		"sSortAscending":  ": activer pour trier les colonnes par ordre croissant",
+		"sSortDescending": ": activer pour trier la colonne en ordre décroissant"
+	},
+	"sSearchPlaceholder": "Chercher..."
+}

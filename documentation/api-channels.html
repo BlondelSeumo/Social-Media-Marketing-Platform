@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>API Channels | ChatPion Documentation</title>
+  <link rel="shortcut icon" href="../assets/img/favicon.png">
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="../assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="../assets/modules/prism/prism.css">
+  <link rel="stylesheet" href="../assets/modules/chocolat/dist/css/chocolat.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+
+<body>
+<div id="app">
+  <div class="main-wrapper">
+    <nav class="navbar navbar-expand-lg main-navbar">
+      <a href="#" class="nav-link sidebar-gone-show h-auto" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
+      <a href="../" class="navbar-brand text-center">
+        <img src="../assets/img/logo.png" style="max-width: 150px;">
+      </a>
+      <div class="nav-collapse mr-lg-auto mr-0 ml-auto m-lg-0"></div>
+    </nav>
+
+    <div class="main-sidebar sidebar-style-2">
+      <aside id="sidebar-wrapper">
+        <div class="sidebar-brand sidebar-brand-sm">
+          <a href="../"><img src="../assets/img/favicon.png"></a>
+        </div>
+        <ul>
+          <li><a href="index.html" >Dashboard</a></li>
+          <li>Integration
+            <ul>
+              <li><a href="import-accounts.html">Facebook & Instagarm</a></li>
+              <li><a href="api_channels.html" class="active">API Channels</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul> COMMENT FEATURE
+              <li><a href="comment-growth-tools.html" >Comment growth tools</a></li>
+              
+            </ul>
+          </li>
+           <li>
+            <ul>MESSENGER TOOLS
+              <li><a href="subscriber-manager.html" >Subscriber Manager</a></li>
+                <li><a href="livechat.html" >Live Chat</a></li>
+                <li><a href="flow-builder.html" >Bot Manager</a></li>
+                <li><a href="broadcasting.html">Broadcasting</a></li>
+            </ul>
+          </li>
+          
+          <li>Ecommerce 
+            <ul>
+              <li><a href="ecommerce.html" >Ecommerce Store</a></li>
+              
+            </ul>
+          </li>
+          <li>Posting Feature
+            <ul>
+              <li><a href="social-posting.html" >Social Posting</a></li>
+              
+            </ul>
+          </li>
+        </ul>              
+      </aside>
+    </div>
+
+    <div class="main-content" style="min-height: 352px;">
+      <section class="section">
+        <div class="section-body">
+          <ul>
+            <li class="item-parent"><a href="#introduction">API Channels</a></li>
+            <li><a href="#payment">Payment APIs</a></li>
+            <li><a href="#social">Social Medias</a></li>
+            <li><a href="#autoresponder">Email Autoresponder</a></li>
+            <li><a href="#sms">SMS API</a></li>
+            <li><a href="#email">Email API</a></li>
+          </ul>
+
+          <div class="payment-section">
+            <div class="section-header">
+              <h1 id="introduction">API Channels</h1>
+            </div>
+            <hr>
+            <p><a name="section-1"></a></p>
+
+            <p><span class="text-primary">API Channels</span> section has covered all of APIs settings in one section and One can explore shortly what types of APIs need to be set up to make ChatPion complete. <br>We have divided the APIs in Four Sections (also navigate in right side bar) which are as belows:</p>
+            <ul>
+              <li>Payment APIs</li>
+              <li>Social Medias</li>
+              <li>Email Autoresponder</li>
+              <li>SMS API</li>
+              <li>Email API</li>
+            </ul>
+            <img class="img-thumbnail" src="assets/images/api_channels/1.png"/>
+
+            <div class="section-header">
+              <h1 id="payment">Payment APIs (Admin : Extended License Only)</h1>
+            </div>
+            <hr>
+
+            <div class="alert alert-danger">
+              <div><i class="fas fa-exclamation-circle"></i> Payment Section is available in extended version.</div>
+            </div>
+            <p><span class="text-primary">ChatPion</span> is a white-label Saas application. You can sell the service of ChatPion to your end-users— establishing a software service business as your own brand. To complete the process admin have complete the Payment APIs settings. So let's dive into the section.</p>
+            <p><span class="text-primary">ChatPion</span> has integrated two global and some local Payment Gateways with the system. These are given below:</p>
+
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li><a class="text-dark" href="#paypal">Paypal</a></li>
+                  <li><a class="text-dark" href="#stripe">Stripe</a></li>
+                  <li><a class="text-dark" href="#Mollie">Mollie</a></li>
+                  <li><a class="text-dark" href="#Razorpay">Razorpay</a></li>
+                  <li><a class="text-dark" href="#Paystack">Paystack</a></li>
+                  <li><a class="text-dark" href="#Mercadopago">Mercadopago</a></li>
+                  <li><a class="text-dark" href="#SSLCOMMERZ">SSLCOMMERZ</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>
+                  
+                  <li><a class="text-dark" href="#Senangpay">Senangpay</a></li>
+                  <li><a class="text-dark" href="#Instamojo">Instamojo</a></li>
+                  <li><a class="text-dark" href="#Toyyibpay">Toyyibpay</a></li>
+                  <li><a class="text-dark" href="#Xendit">Xendit</a></li>
+                  <li><a class="text-dark" href="#Myfatoorah">Myfatoorah</a></li>
+                  <li><a class="text-dark" href="#Paymaya">Paymaya</a></li>
+                  <li><a class="text-dark" href="#Manual">Manual</a></li>
+                </ul>
+              </div>
+            </div>
+
+            
+            <p><img class="img-thumbnail" src="assets/images/api_channels/2.png"/></p>
+            <br>
+            <h2 id="paypal">Paypal</h2>
+
+            <p>
+              <b>PayPal Email</b>: Provide your PayPal business account email. <br>
+
+              <b>PayPal Sandbox Mode</b>: If you want to test the paypal payment then you have to enable sandbox mode. <br>
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/3.png"/></p>
+            <br>
+
+            <h2 id="stripe">Stripe</h2>
+            <p>
+              <b>Stripe secret Key & Stripe published key</b>: If you want to integrate your Stripe account then you’ve put your stripe secret key and stripe published key of your stripe account. <br>
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/4.png"/></p>
+            <br>
+
+            <h2 id="Mollie">Mollie</h2>
+            <p>
+              <b>Mollie API Key</b>:  If you want to integrate the Mollie payment method then you’ve to put your Mollie API key. Visit <a href="https://www.mollie.com/dashboard"><b>Mollie</b></a> and go to <b class="text-danger">Settings > API Keys & Webhooks</b> and copy your key id and key secret and paste into the corresponding field. <br>
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/5.png"/></p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/mollie.png"/></p>
+            <br>
+
+            <h2 id="Razorpay">Razorpay</h2>
+            <p>
+
+              <b>Razorpay Key ID & key secret</b>: If you want to integrate Razorpay payment method then you’ve to put your razorpay key id and secret key. Visit <a href="https://dashboard.razorpay.com/app/dashboard"><b>Razorpay</b></a> and go to <b class="text-danger">Settings > API Keys</b> and copy your key id and key secret and paste into the corresponding field.<br>
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/6.png"/></p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/razorpay.png"/></p>
+            <br>
+            
+            <h2 id="Paystack">Paystack</h2>
+            <p>
+              <b>Paystack Secret Key & public key</b>: If you want to integrate paystack payment method then you’ve to put your paystack secret key and public key. Visit <a href="https://dashboard.paystack.com/#/login?next=app.onboarding.home"><b>Paystack</b></a> and go to <b class="text-danger">Settings > API Keys & Webhooks</b> and copy your key id and key secret and paste into the corresponding field.
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/7.png"/></p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/paystack.png"/></p>
+            <br>
+            
+            <h2 id="Mercadopago">Mercadopago</h2>
+            <p>
+              <b>Mercado pago public key & acceess token</b>: If you want to integrate Mercado pago payment method then you’ve to put your Mercado pago public key & acceess token. Visit <a href="https://www.mercadopago.com.br/developers/panel/credentials"><b>Mercado pago</b></a> and copy Mercado pago public key & acceess token and put them into the corresponding fields.
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/8.png"/></p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/paystack.png"/></p>
+            <br>
+            
+            <h2 id="SSLCOMMERZ">SSLCOMMERZ</h2>
+            <p>
+              <b>SSLCOMMERZ store id & store password</b>: If you want to integrate SSLCOMMERZ payment method then you’ve to put your SSLCOMMERZ store id & store password.
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/9.png"/></p>
+            <br>
+            
+            <h2 id="Senangpay">Senangpay</h2>
+            <p>
+              <b>Senangpay merchant id & secret key</b>: If you want to integrate Senangpay payment method then you’ve to put your Senangpay merchant id and secret key. Visit <a href="https://sandbox.senangpay.my/login"><b>Senangpay</b></a> and go to <b class="text-danger">Settings > Profile</b> and Scroll down to Shopping cart integration link. From there copy your merchant id and secret key and paste into the corresponding field. Also please copy the Senangpay Return url from Ecommerce store checkout Settings and paste it into Return url of Senangpay panel.
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/10.png"/></p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/senangpay.png"/></p>
+            <br>
+            
+            <h2 id="Instamojo">Instamojo</h2>
+            <p>
+              <b>Instamojo private api key & private auth token</b>: If you want to integrate Instamojo payment method then you’ve to put your Instamojo private api key & private auth token. Visit <a href="https://test.instamojo.com/integrations"><b>Instamojo</b></a> and go to <b class="text-danger">API & Plugins</b> and copy your private api key & private auth token and paste into the corresponding field.
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/11.png"/></p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/instamojo.png"/></p>
+            <br>
+            
+            <h2 id="Toyyibpay">Toyyibpay</h2>
+            <p>
+              <b>Toyyibpay Secret Key & Toyyibpay Category code</b>: If you want to integrate Instamojo payment method then you’ve to put your Instamojo private api key & private auth token. Visit <a href="https://test.instamojo.com/integrations"><b>Instamojo</b></a> and go to <b class="text-danger">API & Plugins</b> and copy your private api key & private auth token and paste into the corresponding field.
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/12.png"/></p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/toyyibpay_1.png"/></p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/toyyibpay_2.png"/></p>
+            <br>
+            
+            <h2 id="Xendit">Xendit</h2>
+            <p>
+              <b>Xendit secret api key</b>: If you want to integrate Xendit payment method then you’ve to put your Xendit secret api key. Visit <a href="https://dashboard.xendit.co/settings"><b>Xendit</b></a> and go to <b class="text-danger">Settings -> Developer (API Key)</b> and then click on Generate secret key and then copy Publick follow the instruction and put the API key into the corresponding field.
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/13.png"/></p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/xendit_1.png"/></p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/xendit_2.png"/></p>
+            <br>
+            
+            <h2 id="Myfatoorah">Myfatoorah</h2>
+            <p>
+              <b>Myfatoorah Api Key</b>: If you want to integrate Myfatoorah payment method then you’ve to put your Myfatoorah api key. Visit <a href="https://myfatoorah.readme.io/docs/live-token"><b class="text-primary">Myfatoorah</b></a> and go to Live Token and follow the instruction and put the API key into the corresponding field.
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/14.png"/></p>
+            <br>
+            
+            <h2 id="Paymaya">Paymaya</h2>
+            <p>
+              <b>Paymaya Public Key & Secret Key</b>: If you want to integrate Paymaya payment method then you’ve to put your Paymaya publick key and secret key.
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/15.png"/></p>
+            <br>
+            
+            <h2 id="Manual">Manual</h2>
+            <p>
+              <b>Manual Payment</b>: Manual payment is for take payment manually from user manually and uploads payment documents in the system.
+            </p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/16.png"/></p>
+            <br>
+            
+            <h2 id="Currency">Currency</h2>
+            <p>Select your country payment currency.</p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/17.png"/></p>
+            <br>
+          </div>
+
+          <div class="social-media-section">
+            <div class="section-header">
+              <h1 id="social">Social Medias</h1>
+            </div>
+            <hr>
+
+            <p><b class="text-primary">ChatPion</b> is a multichannel-marketing Software. To attract people to your business and products, it has a social post scheduler that can publish and schedule posts on different popular social media, such as Facebook, Instagram, Twitter, and so on. Integrated Social Medias are: </p>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>LinkedIn</li>
+              <li>Reddit</li>
+              <li>Medium</li>
+              <li>Blogger</li>
+              <li>Wordpress</li>
+              <li>Wordpress (self-hosted)</li>
+            </ul>
+            <p><img src="assets/images/api_channels/social_medias.png" alt="" class="img-thumbnail"></p>
+            <p>As above social medias are third-party application, so you've to complete some process to get started publishing contents on these medias. You've to set up their apis and import your corresponding social media account to get started. So let's dive into more deep.</p>
+
+            <h2>Facebook</h2>
+            <p>Hover on the Facebook Social Media, you'll see two buttons app settings and import account. Click on the corresponding button for the corresponding action.</p>
+            <h5><strong>How to set up Facebook App</strong></h5>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/SHbOOT-ekq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+            <h5><strong>How to Submit Facebook App</strong></h5>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/YswJ--ADd6c" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>Twitter</h2>
+            <p>Hover On the Twitter media and go to api settings section and follow the below videos.</p>
+            <h5><strong>How to create Twitter App - Social Poster</strong></h5>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/TiMwQiI3s5o" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+            <h5><strong>Twitter Developer Account Verification</strong></h5>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/TiMwQiI3s5o" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>        
+
+            <h2>LinkedIn</h2>
+            <p>Hover On the LinkedIn media and go to api settings section and follow the below videos.</p>
+            <h5><strong>How to create LinkedIn App</strong></h5>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/a2dVJTMOEG0" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br><br>   
+
+            <h2>Medium</h2>
+            <p>Hover On the Medium, click on the import account button and you'll be redirected to the import account section. Now click on the import acconut button and put integration token of medium account. No app is needed to create for medium.</p>
+            <p><img class="img-thumbnail" src="assets/images/api_channels/medium.png" alt=""></p>
+            <!-- <h5><strong>How to create LinkedIn App</strong></h5> -->
+            <!-- <iframe  width="90%" height="400" src="https://www.youtube.com/embed/a2dVJTMOEG0" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br><br> -->
+
+
+            <h2>Reddit</h2>
+            <p>Hover On the Reddit, click on the api settings and set up reddit app by following the below video and then import your reddit account.</p>
+            <h5 class="font-weight-bold">How to create Reddit App</h5>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/Y8SHL6VG_Dg" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br><br>
+
+
+            <h2>Wordpress</h2>
+            <p>Hover On the wordpress, click on the api settings and set up wordpress app by following the below video and then import your wordpress account.</p>
+            <h5 class="font-weight-bold">How to create WordPress App</h5>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/7JSd5qh6gNI" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br><br>
+
+            <h2>Wordpress (self-hosted)</h2>
+            <p>Hover On the wordpress (self-hosted), click on the api settings and set up wordpress app by following the below video and then import your wordpress account.</p>
+            <h5 class="font-weight-bold">How to create WordPress (self-hosted) App</h5>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/E3JEYX_8UiY" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br><br>
+          </div>
+
+          <div class="email-autoresponder-section">
+            <div class="section-header">
+              <h1 id="autoresponder">Email Autoresponder</h1>
+            </div>
+            <hr>
+
+            <p>Besides all other amazing features, chatpion also has integrated some email management third party tools for autoresponding over emails from the system. There are five email autoresponders are integrated which will send collected emails from the chatpion to the corresponding autoresponders and email will be added to the autoresponder email lists. Chatpion email Autoresponders are : </p>
+            <ul>
+              <li>Mailchimp</li>
+              <li>Sendinblue</li>
+              <li>Acelle</li>
+              <li>Mautic</li>
+              <li>ActiveCampaign</li>
+            </ul>
+            <p><img src="assets/images/api_channels/autoresponders.png" alt="" class="img-thumbnail"></p>
+            <br>
+
+            <h2>Mailchimp</h2>
+            <p>You can now integrate MailChimp into ChatPion. From now with this feature all the emails collected from messenger Quick Reply or user’s sign up will automatically added to your desired MailChimp list.</p>
+
+            <h6><strong>Integration procedure: </strong></h6>
+            <p>Click on the mailchimp and you'll be redirected to the mailchimp account adding section.</p>
+            <p><img src="assets/images/api_channels/18.png" alt="" class="img-thumbnail"></p>
+
+            <p> Click the <b class="text-primary">Add Account</b> button. A popup window will appear to put API key and Tracking Name. Please provide your MailChimp account API key and also give a name so that you can recognize it later.</p>
+            <p><img src="assets/images/api_channels/19.png" alt="" class="img-thumbnail"></p>
+            <h6><strong>How to get MailChimp API key?</strong></h6>
+            <iframe  width="90%" height="300" src="https://www.youtube.com/embed/4Wp_2OlUpC4" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+            
+
+            <h2>Sendinblue</h2>
+            <p>By integrating Sendinblue, all the emails collected from messenger Quick Reply or user’s sign up will automatically be added to your desired Sendinblue list.</p>
+            <h6><strong>Integration procedure: </strong></h6>
+            <p>Click on the Sendinblue and you'll be redirected to the Sendinblue account adding section.</p>
+            <p><img src="assets/images/api_channels/23.png" alt="" class="img-thumbnail"></p>
+            <p>Click the <b>Add Account</b> button. A popup window will appear to put API key and Tracking Name. Please provide your Sendinblue account API key and also give a name so that you can recognize it later.</p>
+            <p><img src="assets/images/api_channels/24.png" alt="" class="img-thumbnail"></p>
+            <h6><strong>How to get Sendinblue API key?</strong></h6>
+            <iframe  width="90%" height="300" src="https://www.youtube.com/embed/icsvCdTHA88" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>Mautic</h2>
+            <p>By integrating Mautic, all the emails collected from messenger Quick Reply or user’s sign up will automatically be added to your desired Mautic list.</p>
+            <h6><strong>Integration procedure: </strong></h6>
+            <p>Click on the Mautic and you'll be redirected to the Mautic account adding section.</p>
+            <p><img src="assets/images/api_channels/25.png" alt="" class="img-thumbnail"></p>
+            <p>Click the <b>Add Account</b> button. A popup window will appear to put Tracking Name, Mautic Base URL, Mautic account username and Mautic account password. Please provide your Mautic Base URL, Mautic account username, Mautic account password and also give a name so that you can recognize it later.</p>
+            <p><img src="assets/images/api_channels/26.png" alt="" class="img-thumbnail"></p>
+            <h6><strong>How To Integrate Mautic Email Marketing App With ChatPion?</strong></h6>
+            <iframe  width="90%" height="300" src="https://www.youtube.com/embed/zua3R3Rzvlk" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>ActiveCampaign</h2>
+            <p>By integrating ActiveCampaign, all the emails collected from messenger Quick Reply or user’s sign up will automatically be added to your desired ActiveCampaign list.</p>
+            <h6><strong>Integration procedure: </strong></h6>
+            <p>Click on the ActiveCampaign and you'll be redirected to the ActiveCampaign account adding section.</p>
+            <p><img src="assets/images/api_channels/27.png" alt="" class="img-thumbnail"></p>
+            <p>Click the <b>Add Account</b> button. A popup window will appear to put Tracking Name, API URL and API Key. Please provide your ActiveCampaign account’s API URL, API key and also give a name so that you can recognize it later.</p>
+            <p><img src="assets/images/api_channels/28.png" alt="" class="img-thumbnail"></p>
+            <h6><strong>How to get ActiveCampaign API key?</strong></h6>
+            <iframe  width="90%" height="300" src="https://www.youtube.com/embed/CNFw7fLaAIw" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>Acelle</h2>
+            <p>By integrating Acelle, all the emails collected from messenger Quick Reply or user’s sign up will automatically be added to your desired Acelle list.</p>
+            <h6><strong>Integration procedure: </strong></h6>
+            <p>Click on the Acelle and you'll be redirected to the Acelle account adding section.</p>
+            <p><img src="assets/images/api_channels/29.png" alt="" class="img-thumbnail"></p>
+            <p>Click the <b>Add Account</b> button. A popup window will appear to put Tracking Name, API URL and API Key. Please provide your Acelle account’s API URL ( example:  https://example.com/api/v1 ), API key and also give a name so that you can recognize it later.</p>
+            <p><img src="assets/images/api_channels/30.png" alt="" class="img-thumbnail"></p>
+            <h6><strong>How To Integrate Acelle Email Marketing App With ChatPion</strong></h6>
+            <iframe  width="90%" height="300" src="https://www.youtube.com/embed/9Siw2N0vKV4" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+
+            <h6><strong>How to Collect Emails and send them to <span class="text-primary">Email Autoresponders</span> lists</strong></h6>
+            <p>
+              With ChatPion you can collect emails in two ways. One is from when a user sign up into ChatPion system. In order to send user’s sign up email to your corresponding email autoresponder (mailchimp/sendinblue/mautic/acelle/activecampaign) list you need to configure a setting going to the menu <b class="text-danger">System → Settings</b> then click Change Settings from General section. Now click Email Auto Responder tab and select your corresponding email autoresponder (mailchimp/sendinblue/mautic/acelle/activecampaign) list where you want to send the collected email.
+            </p>
+            <p><img src="assets/images/api_channels/21.png" alt="" class="img-thumbnail"></p>
+            <p>
+              Other one is from Quick Reply of Messenger Bot. You also need to configure a setting to send collected emails to your corresponding email autoresponder (mailchimp/sendinblue/mautic/acelle/activecampaign) list. For this please go to the menu <b>Bot Messenger</b>, then click <b class="text-primary">Actions</b> link from Bot Settings section. Now click the General Settings tab and then select your desired corresponding email autoresponder (mailchimp/sendinblue/mautic/acelle/activecampaign) list and hit the <b class="text-danger">save</b> button.
+            </p>
+            <p><img src="assets/images/api_channels/22.png" alt="" class="img-thumbnail"></p>
+          </div>
+
+          <div class="sms-api-section">
+            <div class="section-header">
+              <h1 id="sms">SMS APIs</h1>
+            </div>
+            <hr>
+            <p><b class="text-primary">Chatpion</b> has enhances itself with it's amazing features. Beside all other features it also has SMS broadcasting features. <b class="text-primary">Chatpion</b> has made the SMS broadcasting easy by integrating some very popular SMS Gateways and also has custom GET/POST API added feature. Below are the available gateways that an user can integrate with the system : </p>
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                    <li>Twilio</li>
+                    <li>Plivo</li>
+                    <li>Clickatell</li>
+                    <li>Clickatell-platform</li>
+                    <li>Planet</li>
+                    <li>Nexmo</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>MSG91</li>
+                  <li>Africastalking</li>
+                  <li>SemySMS</li>
+                  <li>Routesms.com</li>
+                  <li>HTTP GET/POST</li>
+                </ul>
+              </div>
+            </div>
+            
+            <p><img src="assets/images/api_channels/31.png" alt="" class="img-thumbnail"></p>
+            <h2>Twilio</h2>
+            <p><b class="text-primary">Twilio</b> is one of the most popular SMS Gateway in worldwide. <b>Chatpion</b> has integrated Twilio by using their API. You can easily use twilio service through chatpion system for SMS broadcasting. Click on the <b class="text-primary">Twilio</b> and you'll redirect to the SMS API management section. click on <b class="text-danger">Add new API -> Add default Gateway</b>, a modal will appear and select twilio from the API list.</p>
+            <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+            <p>You can see what is need to add a SMS api by click on <b class="text-primary">Instruction</b> button from SMS API adding modal.</p>
+            <p><img src="assets/images/api_channels/32.png" alt="" class="img-thumbnail"></p>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+            <h6><b>How to integrate Twilio SMS Gateway?</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/uG4yqwqZBW8" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>Plivo</h2>
+            <p><b class="text-primary">Plivo</b> is another one of the most popular SMS Gateway in worldwide. <b>Chatpion</b> has integrated Plivo by using their API. You can easily use Plivo service through chatpion system for SMS broadcasting. Click on the <b class="text-primary">Plivo</b> and you'll redirect to the SMS API management section. click on <b class="text-danger">Add new API -> Add default Gateway</b>, a modal will appear and select Plivo from the Gateway name list. </p>
+            <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+            <p><img src="assets/images/api_channels/32.png" alt="" class="img-thumbnail"></p>
+            <p>You can see what is need to add a SMS api by click on <b class="text-primary">Instruction</b> button from SMS API adding modal.</p>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+            <h6><b>How to integrate Plivo SMS Gateway?</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/VWQ4cMuOxOQ" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>Clickatell</h2>
+            <p><b class="text-primary">Clickatell</b> is another one of the most popular SMS Gateway in worldwide. <b>Chatpion</b> has integrated Clickatell by using their API. You can easily use Clickatell service through chatpion system for SMS broadcasting. Click on the <b class="text-primary">Clickatell</b> and you'll redirect to the SMS API management section. click on <b class="text-danger">Add new API -> Add default Gateway</b>, a modal will appear and select Clickatell from the API list.</p>
+            <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+            <p>You can see what is need to add a SMS api by click on <b class="text-primary">Instruction</b> button from SMS API adding modal.</p>
+            <p><img src="assets/images/api_channels/32.png" alt="" class="img-thumbnail"></p>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+
+
+            <h2>Clickatell-platform</h2>
+            <p><b class="text-primary">Clickatell-platform</b> is another one of the most popular SMS Gateway in worldwide. <b>Chatpion</b> has integrated Clickatell-platform by using their API. You can easily use Clickatell-platform service through chatpion system for SMS broadcasting. Click on the <b class="text-primary">Clickatell-platform</b> and you'll redirect to the SMS API management section. click on <b class="text-danger">Add new API -> Add default Gateway</b>, a modal will appear and select Clickatell-platform from the API list.</p>
+            <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+            <p>You can see what is need to add a SMS api by click on <b class="text-primary">Instruction</b> button from SMS API adding modal.</p>
+            <p><img src="assets/images/api_channels/32.png" alt="" class="img-thumbnail"></p>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+            <h6><b>How to integrate Clickatell-platform SMS Gateway?</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/1O5F3v_5yDk" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>Planet</h2>
+            <p><b class="text-primary">Planet</b> is another one of the most popular SMS Gateway in worldwide. <b>Chatpion</b> has integrated Planet by using their API. You can easily use Planet service through chatpion system for SMS broadcasting. Click on the <b class="text-primary">Planet</b> and you'll redirect to the SMS API management section. click on <b class="text-danger">Add new API -> Add default Gateway</b>, a modal will appear and select Planet from the API list.</p>
+            <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+            <p>You can see what is need to add a SMS api by click on <b class="text-primary">Instruction</b> button from SMS API adding modal.</p>
+            <p><img src="assets/images/api_channels/32.png" alt="" class="img-thumbnail"></p>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+
+            <h2>Nexmo</h2>
+            <p><b class="text-primary">Nexmo</b> is another one of the most popular SMS Gateway in worldwide. <b>Chatpion</b> has integrated Nexmo by using their API. You can easily use Nexmo service through chatpion system for SMS broadcasting. Click on the <b class="text-primary">Nexmo</b> and you'll redirect to the SMS API management section. click on <b class="text-danger">Add new API -> Add default Gateway</b>, a modal will appear and select Nexmo from the API list.</p>
+            <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+            <p>You can see what is need to add a SMS api by click on <b class="text-primary">Instruction</b> button from SMS API adding modal.</p>
+            <p><img src="assets/images/api_channels/32.png" alt="" class="img-thumbnail"></p>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+            <h6><b>How to integrate Nexmo SMS Gateway?</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/YUZXZbh_FKI" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>MSG91</h2>
+            <p><b class="text-primary">MSG91</b> is another one of the most popular SMS Gateway in worldwide. <b>Chatpion</b> has integrated MSG91 by using their API. You can easily use MSG91 service through chatpion system for SMS broadcasting. Click on the <b class="text-primary">MSG91</b> and you'll redirect to the SMS API management section. click on <b class="text-danger">Add new API -> Add default Gateway</b>, a modal will appear and select MSG91 from the API list.</p>
+            <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+            <p>You can see what is need to add a SMS api by click on <b class="text-primary">Instruction</b> button from SMS API adding modal.</p>
+            <p><img src="assets/images/api_channels/32.png" alt="" class="img-thumbnail"></p>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+            <h6><b>How to integrate MSG91 SMS Gateway?</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/HDxJih3saDc" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>Africa's Talking</h2>
+            <p><b class="text-primary">Africa's Talking</b> is another one of the most popular SMS Gateway in worldwide. <b>Chatpion</b> has integrated Africa's Talking by using their API. You can easily use Africa's Talking service through chatpion system for SMS broadcasting. Click on the <b class="text-primary">Africa's Talking</b> and you'll redirect to the SMS API management section. click on <b class="text-danger">Add new API -> Add default Gateway</b>, a modal will appear and select Africa's Talking from the API list.</p>
+            <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+            <p>You can see what is need to add a SMS api by click on <b class="text-primary">Instruction</b> button from SMS API adding modal.</p>
+            <p><img src="assets/images/api_channels/32.png" alt="" class="img-thumbnail"></p>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+            <h6><b>How to integrate Africa's Talking SMS Gateway?</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/AEM5HTyLXfk" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>SemySMS</h2>
+            <p><b class="text-primary">SemySMS</b> is another one of the most popular SMS Gateway in worldwide. <b>Chatpion</b> has integrated SemySMS by using their API. You can easily use SemySMS service through chatpion system for SMS broadcasting. Click on the <b class="text-primary">SemySMS</b> and you'll redirect to the SMS API management section. click on <b class="text-danger">Add new API -> Add default Gateway</b>, a modal will appear and select SemySMS from the API list.</p>
+            <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+            <p>You can see what is need to add a SMS api by click on <b class="text-primary">Instruction</b> button from SMS API adding modal.</p>
+            <p><img src="assets/images/api_channels/32.png" alt="" class="img-thumbnail"></p>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+            <h6><b>How to integrate SemySMS SMS Gateway?</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/T8V2QR1FceQ" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+            <h2>RouteSMS.com</h2>
+            <p><b class="text-primary">RouteSMS.com</b> is another one of the most popular SMS Gateway in worldwide. <b>Chatpion</b> has integrated RouteSMS.com by using their API. You can easily use RouteSMS.com service through chatpion system for SMS broadcasting. Click on the <b class="text-primary">RouteSMS.com</b> and you'll redirect to the SMS API management section. click on <b class="text-danger">Add new API -> Add default Gateway</b>, a modal will appear and select RouteSMS.com from the API list. You'll need the host url for adding Routesms.com</p>
+            <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+            <p>You can see what is need to add a SMS api by click on <b class="text-primary">Instruction</b> button from SMS API adding modal.</p>
+            <p><img src="assets/images/api_channels/32.png" alt="" class="img-thumbnail"></p>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+
+            <h2>Custom HTTP GET API</h2>
+            <p>You know by default ChatPion supports Twillo, Nexmo, Clickatell, Plivo & some other SMS gateway. However for global pricing variation for sending SMS , you may need to add your local SMS gateway provider.</p>
+            <p>It's quite impossible to add each individual API in reality by us actually.</p>
+            <p>But as a solution we have implemented a system where you can add any <b>HTTP GET</b> Request API for sending SMS. you can use your preferable SMS gateway on <b>Chatpion</b> which supports HTTP GET Request for message sending. Only thing you have to do is to create a custom SMS API using ChatPion. Just follow below steps: </p>
+            <ul>
+              <li><b>#Step 1 </b><br> Go to <b class="text-danger">API Channels -> SMS API Section -> HTTP GET/Post</b> option. You'll be redirected to the SMS API management section. Click on the <b class="text-primary">Add SMS API -> Add Custom SMS API [GET]</b></li>
+              <p><img src="assets/images/api_channels/33.png" alt="" class="img-thumbnail"></p>
+              <li><b>#Step 2 </b><br> Fill the <b>API name</b> and <b>HTTP/HTTPS URL</b> fields. For the HTTP URL field please put url ( must be with http or https ) that is functional for sending message and must be for HTTP GET request.</li>
+              <p><img src="assets/images/api_channels/34.png" alt="" class="img-thumbnail"></p>
+              <li><b>#Step 3: </b><br> Now click the <b>“Analyze and test call”</b> button. It will call the url, you just provided, and show you the response of sending message using that url. <br> It will also show you the query parameters analyzed by the system. These parameters can be your api key, action, sender id etc. For every query parameter it will indicate the parameter type and its corresponding value. <br> Keep the parameter type unchanged which are <b>Fixed</b> for your new custom API. You can update the value as your need. <br> You just have to change the parameter type for <b>Destination Number</b> and <b>Message Content</b> . While changing these parameters type, you will notice that new value has replaced on your newly generated custom API url. When you will send SMS through this custom API then these contents will be replaced by your given contents.</li>
+              <p><img src="assets/images/api_channels/35.png" alt="" class="img-thumbnail"></p>
+
+              <li><b>#Step 4</b> <br> Now click the <b class="text-primary">Save</b> button. That’s all. You just have created a custom SMS API on ChatPion for sending sms.</li>
+              <p><img src="assets/images/api_channels/36.png" alt="" class="img-thumbnail"></p>
+
+            </ul>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+            <h6><b>How to integrate Custom [HTTP GET] SMS Gateway?</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/2oEPONzpn0Y" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br>
+
+
+            <h2>Custom HTTP Post API</h2>
+            <p>You know by default ChatPion supports Twillo, Nexmo, Clickatell, Plivo & some other SMS gateway. However for global pricing variation for sending SMS , you may need to add your local SMS gateway provider.</p>
+            <p>It's quite impossible to add each individual API in reality by us actually.</p>
+            <p>But as a solution we have implemented a system where you can add any <b>HTTP POST</b> Request API for sending SMS. you can use your preferable SMS gateway on <b>Chatpion</b> which supports HTTP POST Request for message sending. Only thing you have to do is to create a custom SMS API [POST] using ChatPion. Just follow below steps: </p>
+            <ul>
+              <li><b>#Step 1 </b><br> Go to <b class="text-danger">API Channels -> SMS API Section -> HTTP GET/Post</b> option. You'll be redirected to the SMS API management section. Click on the <b class="text-primary">Add SMS API -> Add Custom SMS API [POST]</b></li>
+              <p><img src="assets/images/api_channels/37.png" alt="" class="img-thumbnail"></p>
+
+              <li><b>#Step 2 </b><br> Fill the <b>API name</b> and <b>Base url</b> fields. <br> For the <b>Base url</b> field please put url ( must be with http or https ) that is functional for sending message and must be for HTTP POST request.</li>
+              <p><img src="assets/images/api_channels/38.png" alt="" class="img-thumbnail"></p>
+
+              <li><b>#Step 3: </b><br> You can also add new parameter for custom sms post api.</li>
+              <p><img src="assets/images/api_channels/39.png" alt="" class="img-thumbnail"></p>
+
+              <li><b>#Step 4</b> <br> Now click the <b>“Test response”</b> button. It will call the url, you just provided, and show you the response of sending message using that url and the provided post parameter .The parameter is included with key, type and value. <br> Keep the parameter type unchanged which are <b>Fixed</b> for your new custom post API. You can add the value as your need. You just have to change the parameter type for <b>Destination Number</b> and <b>Message Content</b> .The parameter must have the <b>Destination Number</b> and <b>Message Content</b>.</li>
+              <li><b>#Step 5</b> <br> Now click the <b>Save</b> button. That’s all. You just have created a custom SMS API [POST] on ChatPion for sending sms.</li>
+              <p><img src="assets/images/api_channels/40.png" alt="" class="img-thumbnail"></p>
+            </ul>
+            <div class="alert alert-warning text-center">
+              <p class="text-dark font-weight-bold"><i class="fas fa-paper-plane"></i> You can test your API by click on the test icon of the added API from the API lists to see if the API works correctly or returns any errors.</p>
+            </div>
+          </div>
+
+          <div class="email-api-section">
+            <div class="section-header">
+              <h1 id="email">Email API</h1>
+            </div>
+            <hr>
+
+            <p><b class="text-primary">Chatpion</b> has enhances itself with it's amazing features. Beside all other features it also has Email broadcasting features. <b class="text-primary">Chatpion</b> has made the Email broadcasting easy by integrating some very popular Email Gateways and allow to add SMTP set up. Below Email Gateways can be integrate for Email Broadcasting : </p>
+            <ul>
+              <li>SMTP</li>
+              <li>Sendgrid</li>
+              <li>Mailgun</li>
+              <li>Mandrill</li>
+              <p><img src="assets/images/api_channels/41.png" alt="" class="img-thumbnail"></p>
+            </ul>
+
+            <h2>SMTP</h2>
+            <p>ChatPion is the most powerful multi-channel marketing application in the world. It enhances itself with lots of marketing features which are very useful to our customers. You can use SMTP set up for broadcasting emails. Click On the SMTP and you'll be redirected to the SMTP section of the system</p>
+            <p><img src="assets/images/api_channels/42.png" alt="" class="img-thumbnail"></p>
+
+            <p>click on the <b>New SMTP API</b>, a modal for adding SMTP will be appear and you'll need the following information to create a new one: </p>
+            <ol>
+              <li>Email Address</li>
+              <li>SMTP Host</li>
+              <li>SMTP Port</li>
+              <li>SMTP username</li>
+              <li>SMTP Password</li>
+              <li>SMTP Type</li>
+              <li>Sender Name (Optional)</li>
+            </ol>
+            <p><img src="assets/images/api_channels/43.png" alt="" class="img-thumbnail"></p>
+            <h6><b>How to Create SMTP and integrate with Chatpion</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/hirjhlearq0" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br><br>
+
+            <h2>Sendgrid</h2>
+            <p>Beside SMTP, you may use Sendgrid email gateway for email broadcasting. Chantpion also integrated Sendgrid by using their API. Just click on the <b>Sendgrid</b> and you'll redirected to the sendgrid management page.</p>
+            <p><img src="assets/images/api_channels/44.png" alt="" class="img-thumbnail"></p>
+            <p>Click on <b>New Sendgrid API</b> and a modal will appear to add sendgrid api. Fill up the form with necessary information and hit <b>Save</b> button.</p>
+            <p><img src="assets/images/api_channels/45.png" alt="" class="img-thumbnail"></p>
+
+            <h6><b>How to Integrate Sendgrid Email Gateways= with Chatpion</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/sp8Ia41Q5hs" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br><br>
+
+            <h2>Mailgun</h2>
+            <p>Beside SMTP/Sendgrid, you may use Mailgun email gateway for email broadcasting. Chantpion also integrated Mailgun by using their API. Just click on the <b>Mailgun</b> and you'll redirected to the Mailgun management page.</p>
+            <p><img src="assets/images/api_channels/46.png" alt="" class="img-thumbnail"></p>
+            <p>Click on <b>New Mailgun API</b> and a modal will appear to add sendgrid api. Fill up the form with necessary information and hit <b>Save</b> button.</p>
+            <p><img src="assets/images/api_channels/47.png" alt="" class="img-thumbnail"></p>
+
+            <h6><b>How to Integrate Mailgun Email Gateways= with Chatpion</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/DxTU5lQNhvY" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br><br>
+
+            <h2>Mandrill</h2>
+            <p>Beside SMTP/Sendgrid/Mailgun, you may use Mandrill email gateway for email broadcasting. Chantpion also integrated Mandrill by using their API. Just click on the <b>Mandrill</b> and you'll redirected to the Mandrill management page.</p>
+            <p><img src="assets/images/api_channels/48.png" alt="" class="img-thumbnail"></p>
+            <p>Click on <b>New Mandrill API</b> and a modal will appear to add sendgrid api. Fill up the form with necessary information and hit <b>Save</b> button.</p>
+            <p><img src="assets/images/api_channels/49.png" alt="" class="img-thumbnail"></p>
+
+            <h6><b>How to Integrate Mandrill Email Gateways= with Chatpion</b></h6>
+            <iframe  width="90%" height="400" src="https://www.youtube.com/embed/K6hcipZbbNw" frameborder="0" allow="accelerometer;   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p><br><br>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- General JS Scripts -->
+  <script src="../assets/modules/jquery.min.js"></script>
+  <script src="../assets/modules/popper.js"></script>
+  <script src="../assets/modules/tooltip.js"></script>
+  <script src="../assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="../assets/modules/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.8/marked.min.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="../assets/modules/prism/prism.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  <script src="../assets/modules/sticky-kit.js"></script>
+  <script src="../assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+  <!-- Template JS File -->
+  <script src="https://unpkg.com/navigo@6.0.2/lib/navigo.min.js"></script>
+</body>
+</html>

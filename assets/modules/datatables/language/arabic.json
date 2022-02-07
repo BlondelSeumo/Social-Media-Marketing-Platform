@@ -1,0 +1,21 @@
+{
+	"sEmptyTable": "sEmptyTable",
+	"sInfoFiltered": "تمت تصفيته",
+	"sInfoPostFix": "sInfoPostFix",
+	"sInfoThousands": "معلومات بالآلاف",
+	"sLoadingRecords": "sLoadingRecords",
+	"sProcessing": "ق التجهيز",
+	"sZeroRecords": "sZeroRecords",
+	"oPaginate": {
+		"sFirst": "أولا",
+		"sLast": "s الاخير",
+		"sNext": "s",
+		"sPrevious": "السابق",
+	},
+	"pSearch": "البحث",
+	"oAria": {
+		"sSortAscending": "ترتيب تصاعدي",
+		"sSortDescending": "ترتيب تنازلي"
+	},
+	"sSearchPlaceholder": "البحث"
+}

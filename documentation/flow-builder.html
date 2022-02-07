@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>ChatPion Documentation</title>
+  <link rel="shortcut icon" href="../assets/img/favicon.png">
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="../assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="../assets/modules/prism/prism.css">
+  <link rel="stylesheet" href="../assets/modules/chocolat/dist/css/chocolat.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <a href="#" class="nav-link sidebar-gone-show h-auto" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
+        <a href="../" class="navbar-brand text-center">
+          <img src="../assets/img/logo.png" style="max-width: 150px;">
+        </a>
+        <div class="nav-collapse mr-lg-auto mr-0 ml-auto m-lg-0">
+          <!-- <a class="sidebar-gone-show nav-collapse-toggle sidebar-gone-show nav-link" href="#">
+            <i class="fas fa-ellipsis-v"></i>
+          </a> -->
+        </div>
+        <ul class="navbar-nav d-lg-flex align-items-center justify-content-end w-25">
+          <li class="ml-lg-2"><a href="../api/doc" target="_BLANK" class="nav-link btn btn-outline-primary text-primary btn-icon icon-left"><i class="fas fa-plug"></i> API Doc</a></li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="../"><img src="../assets/img/favicon.png"></a>
+          </div>
+         <ul>
+            <li><a href="index.html" >Dashboard</a></li>
+            <li>Integration
+              <ul>
+                <li><a href="import-accounts.html" >Facebook & Instagarm</a></li>
+                <li><a href="api-channels.html">API Channels</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul> COMMENT FEATURE
+                <li><a href="comment-growth-tools.html" >Comment growth tools</a></li>
+                
+              </ul>
+            </li>
+             <li>
+              <ul>MESSENGER TOOLS
+                <li><a href="subscriber-manager.html" >Subscriber Manager</a></li>
+                <li><a href="livechat.html" >Live Chat</a></li>
+                <li><a href="flow-builder.html" class="active">Bot Manager</a></li>
+                <li><a href="broadcasting.html">Broadcasting</a></li>
+              </ul>
+            </li>
+            
+            
+            
+            <li>Ecommerce 
+              <ul>
+                <li><a href="ecommerce.html" >Ecommerce Store</a></li>
+                
+              </ul>
+            </li>
+            <li>Posting Feature
+              <ul>
+                <li><a href="social_posting.html" >Social Posting</a></li>
+                
+              </ul>
+            </li>
+            
+          </ul>                           
+        <!-- Menu -->
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content" style="min-height: 352px;">
+         <section class="section">
+            <div class="section-body">
+
+              <ul id="submenu">
+                 <li><a href="#flow-builder">Build bot with flow builder</a></li>
+                 <li><a href="#bot-manager">Bot Manager</a></li>
+                 <li><a href="#editor">Visual Flow Builder</a></li>
+                 <li><a href="#start-bot-flow">Start Bot Flow</a></li>
+                 <li><a href="#new-label">Add New Label</a></li>
+                 <li><a href="#keywords">Trigger Keywords</a></li>
+                 <li><a href="#add-component">Add components without Doc-menu</a></li>
+                 <li><a href="#text">Text</a></li>
+                 <li><a href="#custome-variable">Include Custom Variables</a></li>
+                 <li><a href="#image">Image, Audio, Video, and File component</a></li>
+                 <li><a href="#fb-media">FB Media</a></li>
+                 <li><a href="#card">Card</a></li>
+                 <li><a href="#button">Button</a></li>
+                 <li><a href="#button-types">Button types</a></li>
+                 <li><a href="#new-postback">New postback</a></li>
+                 <li><a href="#configure-new-postback">Configure New postback</a></li>
+                 <li><a href="#web-url">Web Url & Webview</a></li>
+                 <li><a href="#select-button-type">Button type</a></li>
+                 <li><a href="#call-us">Call us</a></li>
+                 <li><a href="#carousel">Carousel</a></li>
+                 <li><a href="#carousel-item">Carousel Item</a></li>
+                 <li><a href="#quick-reply">Quick Reply</a></li>
+                 <li><a href="#new-postback-quick-reply">New postback as quick reply</a></li>
+                 <li><a href="#phone-quick-reply">Phone as quick reply</a></li>
+                 <li><a href="#email-quick-reply">Email as quick reply</a></li>
+                 <li><a href="#ecommerce">Ecommerce</a></li>
+                 <li><a href="#otn">OTN</a></li>
+                 <li><a href="#otn-postback">Create OTN postback</a></li>
+                 <li><a href="#action-button">Action buttons</a></li>  
+              </ul>
+
+               <div class="section-header">
+                  <h1 id="flow-builder">How to build bot with flow builder</h1>
+               </div>
+               <hr>
+               <p><a name="section-1"></a></p>
+               
+
+               <p>In this blog, I will show you how to create Facebook Messenger bot and Instagram DM bot with ChatPion Flow Builder. Please follow the instructional blog step by step to create an interactive Facebook Messenger bot or Instagram DM bot. </p>
+
+               <p>To build a bot, First, go to the dashboard of the ChatPion. Now click on the Bot manager option at the left sidebar of the dashboard. </p>
+               <img src="assets/screenshots/ChatPion-Dashboard-bot_manager.png" class="img-fluid">
+               
+               <div class="section-header">
+                  <h1 id="bot-manager">Bot Manager</h1>
+                  
+               </div>
+               <hr>
+               
+               <p>And instantly, the Bot Manager page will appear. At the top of the page, you will see the profile of your Facebook account. If you have imported one more Facebook Profile, you can change the Facebook profile.</p>
+
+               <p>To build a bot on the Facebook page, select the radio button to Facebook. On the other hand, to build a bot on Instagram, select the radio button to Instagram.</p>
+
+               <img src="assets/screenshots/bot_manager.png" class="img-fluid">
+
+               
+               
+               <div class="section-header">
+                  <h1 id="editor">Visual Flow Builder Editor</h1>
+               </div>
+               <hr>
+
+               <p>Well, to build a bot, click on the “Create New Flow” button. And instantly, the editor of the Flow Builder will appear. The editor is divided into two parts – Doc-menu and editor. On the Doc-menu, all the components are gathered together. To build a bot, you have to drag components from the Doc-menu and drop them on the editor. Then you have to configure the components and connect them to each other. On the Doc-menu, there are 14 components.</p>
+                <img src="assets/screenshots/first_look_drag_and _drop.png" class="img-fluid">
+
+                <div class="section-header">
+                  <h1 id="start-bot-flow">Start bot flow</h1>
+               </div>
+               <hr>
+               <p>On the Editor, you will see an element called start bot flow. This component is essential to building the bot. Double-click on the Start bot Flow element and the Right Sidebar called Configure Reference will appear with two fields – Title and Choose Labels. In the title field, give a title for the bot.</p>
+
+               <p>And in the Choose labels field, you have to select labels from a drop-down menu of different fields. You can select multiple labels in the Choose labels field. Now click on the Done button and the information will be added to the element.</p>
+
+               <img src="assets/screenshots/start_bot_flow.png" class="img-fluid">
+
+                
+                <div class="section-header">
+                  <h1 id="new-label">Add new label</h1>
+               </div>
+               <hr>
+
+               <p>And from the Choose labels field, you can add a new label. Just write down the name of the label and press enter.</p>
+
+               <img src="assets/screenshots/add_new_label.png" class="img-fluid">
+
+               
+               <div class="section-header">
+                  <h1 id="keywords">Trigger keywords</h1>
+               </div>
+               <hr>
+
+               <p>Now drag the trigger keywords element and drop it on the editor. Now double-click on the component and a sidebar called configure Trigger will appear. In the field, you have to provide comma-separated keywords. When a user writes one of the keywords, the bot will start. Also, you can select a matching type – Exact keyword match and String match. Then click on the Done button. And the keywords will appear on the component.</p>
+
+               <p>Now connect the Trigger Keywords component with the Start Bot Flow component.</p>
+
+               <img src="assets/screenshots/trigger_keywords.png" class="img-fluid">
+
+               <div class="section-header">
+                  <h1 id="add-component">Add components without dragging from Doc-menu</h1>
+               </div>
+               <hr>
+
+               <p>You can also add components without dragging the component from the Doc-menu and dropping it on the editor. From the next output of any component, drag the cursor and drop. And instantly a menu of the different components will appear. And from the menu, select a component and the component will appear on the editor connected with the mother component.</p>
+
+               <img src="assets/screenshots/select_component_from_menu.png" class="img-fluid">
+
+               <p>If you drag your cursor from the button output of any component and drop it on the editor, then the button component will appear on the editor connected with the mother component. 
+               </p>
+               <p>NB. The Button component is not present in the Doc-menu. </p>
+
+                <img src="assets/screenshots/add_button_component.png" class="img-fluid">
+
+                
+
+                <div class="section-header">
+                  <h1 id="keywords">Text</h1>
+               </div>
+               <hr>
+
+               <p>If you want to build a bot with a text element, drag the Text Component and drop it on the editor. Now double-click on the component and a sidebar called Configure Text Message will appear with a text field. In the text field, you have to provide your reply message. You can include the first name or the last name of the user in the reply message.</p>
+
+               <p>You can also enable typing on display by turning on the radio button. Then you can select the delay time in reply in seconds.</p>
+
+               <p>Now click on the Done button and the information will appear on the component. Then connect the text component with the Start bot flow component.</p>
+
+               <img src="assets/screenshots/text_component.png" class="img-fluid">
+
+               <div class="section-header">
+                  <h1 id="custome-variable">Include Custom variables in the reply message</h1>
+               </div>
+               <hr>
+
+               <p>Besides, you can include custom variables in the reply message. Click on the button called custom and a drop-down menu of different variables will appear. And from the drop-down menu, select a variable. The custom variable will be replaced by the actual value before sending it.</p>
+
+               <img src="assets/screenshots/custom_variable.png" class="img-fluid">
+
+
+               
+
+               <div class="section-header">
+                  <h1 id="image">Image, Audio, Video, and File component</h1>
+               </div>
+               <hr>
+               <p>Likewise, you can add Image, Audio, Video, and File components. For these components, you have to upload an image, audio, video, and file respectively. Then you have to connect the components with other components.</p>
+
+               <img src="assets/screenshots/image component.png" class="img-fluid">
+               <hr>
+               <img src="assets/screenshots/video_component.png" class="img-fluid">
+               <hr>
+               <img src="assets/screenshots/audio_component.png" class="img-fluid">
+               <hr>
+            
+               <img src="assets/screenshots/file_component.png" class="img-fluid">
+
+               <div class="section-header">
+                  <h1 id="fb-media">FB Media</h1>
+               </div>
+               <hr>
+
+               <p>To add FB Media component, drag the FB Media component from the Doc-menu and drop it on the editor. Now double-click on the FB Media component and the right sidebar called Facebook Media URL will appear. In the Facebook Media URL field, put your Facebook Page media URL. </p>
+
+               <p>
+
+               You can enable typing on display and select time in seconds for the delay in reply. Now click on the done button and the Facebook page media URL will appear on the component.</p>
+
+               
+
+               <img src="assets/screenshots/FB_media_component.png" class="img-fluid">
+
+               <div class="section-header">
+                  <h1 id="card">Card</h1>
+               </div>
+               <hr>
+
+               <p>To add Card Component, drag the Card Component from the Doc-menu and place it on the editor. The Card component will appear with a button component. Well, now double-click on the Card component and a right sidebar called Configure Generic Template will appear. Now upload an image. After uploading an image, paste a link in the image click destination link field. When a user clicks on the image, the user will be redirected to the URL. Now write a title in the Title field and a subtitle in the Subtitle field.</p>
+
+               <img src="assets/screenshots/card_component.png" class="img-fluid">
+
+               <p>Then you have to configure the Button Component</p>
+
+               <p>Read the following section to know how to add and configure the Button Component.</p>
+
+
+               
+
+               <div class="section-header">
+                  <h1 id="button">Button</h1>
+               </div>
+               <hr>
+               <p>To add Button component, drag your cursor from the button output of a component like the Text or Card component and drop. Instantly, the Button component will appear connected with the mother component.</p>
+
+              <p>And sometimes the button component automatically appear connected with other component, such as Card and Carousel component.</p> 
+
+              <p>Now double-click on the button component and a right sidebar called configure button will appear. Now write a text in the button text field – the text will appear on the button. Then you have to select a button type from the button type field. Click on the button type field and a drop-down menu of different button types – New postback, postback, Weburl, Webview [full], Webview[compact], Webview[tall], User birthday, User email, User phone, User location, Call us, Unsubscribe, Re-subscribe, Chat with human and Chat with robot will appear.</p>
+
+              <img src="assets/screenshots/button/button _component_select_button_type .png" class="img-fluid">
+
+              
+
+              <div class="section-header">
+                  <h1 id="button-types">Button types</h1>
+               </div>
+               <hr>
+
+               <div class="section-header">
+                  <h1 id="new-postback">New postback</h1>
+               </div>
+               <hr>
+
+               <p>Select New postback on the button type and click on the done button.<p>
+                <img src="assets/screenshots/button/select_new_postback_button.png" class="img-fluid">
+
+                <div class="section-header">
+                  <h1 id="configure-new-postback"> Configure New postback</h1>
+                  
+               </div>
+               <hr>
+
+               <p> 
+
+               And instantly, a new postback button will appear connected with the Button component. Now double-click on the New postback Component and the right sidebar called configure New postback will appear. Give a title for the New postback in the title field. And select labels from the Choose label field. Now click on the Done button.</p>
+
+               <img src="assets/screenshots/button/configure_new_post_back.png" class="img-fluid">
+
+               
+
+               <div class="section-header">
+                  <h1 id="postback">Postback</h1>
+                  
+               </div>
+               <hr>
+
+               <p>If you select Postback as the button type, a field called Postback ID will appear. And from the Postback ID field, you have to select a postback id. Click on the postback id field and a drop-down menu of different postback id will appear. And from the drop-down menu, select a postback id. And click on the Done button. The postback id will appear on the Button Component.</p>
+
+               
+
+               <img src="assets/screenshots/button/select_postback_button_type.png" class="img-fluid">
+
+               <div class="section-header">
+                  <h1 id="web-url">Web Url, Webview[full], Webview[tall], Webview[compact]:
+              </h1>
+                  
+               </div>
+               <hr>
+
+               <p>If you select Web Url, Webview[full], Webview[tall] or Webview[compact], another field will appear. And in the field, you have to paste an URL. Now paste a URL and click on the done button. After that, the URL will appear on the Button component.</p>
+
+               
+
+               <img src="assets/screenshots/button/select_web_url_button_type.png" class="img-fluid">
+
+
+               
+
+               <div class="section-header">
+                  <h1 id="select-button-type">Select a button type </h1>
+                  
+               </div>
+               <hr>
+
+              <p>Form the button type field, you can select User email, User birthday, User phone or User location, Unsubscribe button, Resubscribe button, Chat with human, Chat with robot. After selecting any from the button type, click on the done button. Instantly the button type will appear on the button.</p>
+
+                <div class="section-header">
+                  <h1 id="call-us">Call us</h1>
+                  
+               </div>
+               <hr>
+
+               <p>Select Call us button from the drop-down menu of different button types and instantly, another field called Mobile/Phone number will appear. Now you have to provide your phone number in the field. Then click on the done button. </p>
+
+               <img src="assets/screenshots/button/select_call_us_button_type.png" class="img-fluid">
+
+               Carousel:
+
+               <div class="section-header">
+                  <h1 id="carousel">Carousel</h1>
+                  
+               </div>
+               <hr>
+
+              <p>To add a Carousel component, drag the Carousel component from the Doc-menu and drop it on the editor. Instantly, the Carousel component will appear with three carousel items connected with the Carousel component and three button components connected with the three carousel components.</p>
+
+              <p>Now double-click on the Carousel component and the right sidebar called configure Carousel will appear. In the sidebar, you can enable typing on display and select delay in reply time in seconds. Now click on the Done button.</p>
+
+              <img src="assets/screenshots/carousel_component.png" class="img-fluid">
+
+              
+
+               <div class="section-header">
+                  <h1 id="carousel-item">Carousel Item</h1>
+                  
+               </div>
+               <hr>
+
+
+              <p>Now come to the carousel Item component. Double-click on the carousel Item button and the right sidebar called Configure Carousel Item will appear with some fields.</p>
+
+
+              <p>Now upload an image. After uploading an image, paste a link in the image click destination link field. When a user clicks on the image, the user will be redirected to the URL. Now write a title in the title field and a subtitle in the subtitle field. Enable the typing on display and select delay time in seconds.</p>
+
+              <p>Likewise, you have to configure the other two carousel items.</p>
+
+              <p>Now you have to configure buttons. You already know how to configure buttons.</p>
+
+              <p>You can add other components with the button components if you want.</p>
+
+              <p>Now click on the save button or press ctrl + S and your bot will be saved.</p>
+
+              <img src="assets/screenshots/full_carousel.png" class="img-fluid">
+
+              
+
+               <div class="section-header">
+                  <h1 id="quick-reply">Quick Reply</h1>
+                  
+               </div>
+               <hr>
+
+              <p>To add Quick reply component, drag the Quick reply component from the Doc-menu and drop it on the editor. Instantly, the Quick reply component will appear on the editor. You can also add a Quick reply component by dragging your cursor from the quick replies output of a component and dropping it on the editor.</p>
+
+              <p>Now double-click on the Quick Reply component and a right sidebar called configure Quick Reply will appear. Now in the quick reply type field, you have to select a quick reply type. Click on the quick reply type field and a drop-down menu of different types of quick replies – New postback, Postback, Phone, and Email – will appear.</p>
+
+              <img src="assets/screenshots/quick_reply.png" class="img-fluid">
+
+              
+
+              <div class="section-header">
+                  <h1 id="new-postback-quick-reply">New postback as quick reply type</h1>
+                  
+               </div>
+               <hr>
+
+              <p>Select new postback as the quick reply type, and instantly a field called button text will appear. Now you have to provide a text for the button in the button text field. Then Click on the done button.</p>
+
+              
+
+              <img src="assets/screenshots/quick_reply_type_new_postback.png" class="img-fluid">
+
+
+              quick_reply_new_postback_component_connected.png
+
+              <p>And instantly, a new postback component will appear connected with the quick reply component.</p>
+
+              </p> Now double click on the new postback element and the right sidebar called configure new postback will appear. Give a title for the New postback in the title field. And select label from the Choose label field. Now click on the done button.</p>
+
+              <p>After that, you have to add another component with the next output of the New postback component.</p>
+
+              <div class="section-header">
+                  <h1 id="keywords">Postback as a quick reply</h1>
+                  
+               </div>
+               <hr>
+
+
+              <p>If you select postback as the quick reply type, two fields – button text and postback id will appear. In the button text field, you have to write a text for the button. And from the postback id field, you have to select a postback. Click on the postback id field and a drop-down menu of different postback id will appear. And from the drop-down menu, select a postback id. And click on the Done button. And the postback id will appear on the Quick reply component</p>
+
+               <img src="assets/screenshots/quick_reply_type_new_postback.png" class="img-fluid">
+
+               
+
+               <div class="section-header">
+                  <h1 id="phone-quick-reply">Phone as quick reply</h1>
+                  
+               </div>
+               <hr>
+              <p>Just select phone as the quick reply type in the quick reply type field and click on the done button. In this case, the quick reply will collect your phone number from your Facebook Profile and show in the messenger. When a user clicks on the phone number, the system will receive the phone number. And the user will get a message that the system have received your phone number.</p>
+
+              
+
+                <div class="section-header">
+                  <h1 id="email-quick-reply">Email as quick reply</h1>
+                  
+               </div>
+               <hr>
+
+               <p>Just select Email as the quick reply type in the quick reply type field and click on the done button. In this case, the quick reply will collect your Email address from your Facebook Profile and show in the messenger. When a user click on the phone number, the system will receive the email address. And the user will get a message that the system have received your Email address.</p>
+
+               
+               <div class="section-header">
+                  <h1 id="ecommerce">Ecommerce</h1>
+                  
+               </div>
+               <hr>
+
+                <p>To add Ecommerce component, drag the Ecommerce component from the Doc-menu and drop it on the editor. Instantly, the Ecommerce component will appear on the editor.</p>
+
+                <p>Now double-click on the Ecommerce component and a right sidebar called configure Ecommerce with some fields will appear. First, you have to select an Ecommerce store. Click on the select your Ecommerce store field and a drop-down menu of different predefined stores will appear. Well, to configure Ecommerce component, first you have to create stores.</p>
+
+                <p>After you have selected a store, you have to select products for carousel/ generic reply. Just as click on the field, a drop-down menu of different products will appear. Now select products from the drop-down menu. Of course, you can select multiple products. Then you have to write text for the buy now button. Also, you can enable typing on display and select delay time in seconds. Now click on the done button.</p>
+
+                <p>Then you have to connect the Ecommerce component with other component.</p>
+
+                <p>The products you have selected will appear as carousel/generic template in the messenger. And by clicking on the buy now button, the user will be able to buy the product.</p>
+
+                <img src="assets/screenshots/Ecommerce.png" class="img-fluid">
+
+                
+
+                <div class="section-header">
+                  <h1 id="otn">OTN</h1>
+                  
+               </div>
+               <hr>
+              <p>To add OTN component, drag the OTN component from the doc-menu and drop on the editor. Instantly, the OTN component will appear on the editor.</p>
+
+              <p>Now double-click on the OTN component and a right sidebar called configure OTN with two fields will appear.</p>
+
+              <p>First, you have to write a title for the OTN component in the title field. Then you have to select a predefined OTN postback from the OTN postback id field.</p>
+
+              <p>Also, you can enable typing on display and select delay time in seconds.</p>
+              
+              <p>Then click on the Done button.</p>
+
+              <img src="assets/screenshots/select_OTN_Postback_ID.png" class="img-fluid">
+
+              <div class="section-header">
+                  <h1 id="otn-postback">Create OTN postback</h1>
+                  
+               </div>
+               <hr>
+
+               <p>If you don’t have any predefined OTN postback, you have to create an OTN postback first. To create OTN postback, select New OTN from the drop-down menu of the OTN postback ID field. And click on the Done button.</p>
+
+               <img src="assets/screenshots/create_new_otn_01.png" class="img-fluid">
+
+               <p>Now click on the New OTN component and a right sidebar called Configure New OTN will appear with some fields. Give a template name in the template name fields and choose labels in the labels field. You can enable typing on display and select a delay time in reply in seconds. Then click on the done button. And the information will appear on the New OTN template.</p>
+
+               <img src="assets/screenshots/create_new_otn_02.png" class="img-fluid">
+
+               <p>Now click on the New postback Component and a right sidebar called configure new postback will appear with some fields. Give a title in the title field and choose labels in the Choose labels field. Now click on the done button. Now you have to connect a component with the new postback component. After that, click on the Save button and your bot with OTN will be saved.</p>
+
+                <img src="assets/screenshots/new_otn_postback.png" class="img-fluid">
+
+                 <div class="section-header">
+                  <h1 id="action-button">Action buttons</h1>
+                  
+               </div>
+               <hr>
+
+              <p> To add Action Buttons component, drag the Action Button component from the Doc-menu and drop it on the editor. Instantly, the Action Buttons component will appear on the editor. <p>
+
+              <p>Now double-click on the Action Button component, and a right sidebar called Configure Action Button with a field called Action Button will appear.
+              From the field, you have to select an Action button. Click on the Action Button field and drop-down menu of different Action Buttons – Get started template, No match template, Un-subscribe template, Re-subscribe template, Email quick reply template, Location quick reply template, Brithday quick reply template, Chat with human template, and Chat with robot template – will appear. Now you have to select an action button template from the drop-down menu. Then click on the done button. Instantly, the name of Action button template will appear on the Action button component. </p>
+              
+              <p>Now you have to connect the action button component with the start bot flow component.</p>
+
+              <img src="assets/screenshots/new_otn_postback.png" class="img-fluid">
+
+
+
+
+               
+
+
+              
+
+
+
+
+
+
+              
+
+
+
+
+
+
+
+              
+            
+
+
+
+               
+
+
+               
+
+
+               
+
+               
+
+               
+
+
+
+
+
+
+
+              
+
+
+               
+
+               
+
+
+
+
+
+
+
+
+
+               
+               
+               <!-- <div class="d-flex justify-content-lg-end">
+                <a href="#license" class="btn btn-white btn-icon icon-right btn-lg">Next: License <i class="fas fa-chevron-right"></i></a>
+               </div>
+
+
+
+
+               <div class="section-header">
+                  <h1 id="license">License</h1>
+                  
+               </div>
+               <hr>
+               <p><a name="license"></a></p>
+               <h2 id="license-1">License</h2>
+               <p>MIT License</p>
+               <p>Copyright (C) 2019 Muhamad Nauval Azhar</p>
+               <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+               <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+               <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+               <div class="d-flex justify-content-lg-end"><a href="#/en/2.3/upgrade-guides" class="btn btn-white btn-icon icon-right btn-lg">Next: Upgrade Guides <i class="fas fa-chevron-right"></i></a></div>
+
+
+
+                <div class="section-header">
+                   <h1 id="upgrade-guides">Upgrade Guides</h1>
+                   <div class="ml-auto"><a href="#/en/2.3/starter/third-party-libraries" class="btn btn-white btn-icon icon-right btn-lg">Skip to Third-party Libraries <i class="fas fa-chevron-right"></i></a></div>
+                </div>
+                <hr>
+                <p><a name="upgrade-guides"></a></p>
+                <h2 id="upgrade-guides-1">Upgrade Guides</h2>
+                <p>To upgrade version 2.2 to version 2.3, you need to copy some files, and make some changes to the code structure. The following are some of the changes:</p>
+                <h2 id="welcome-yarn">Welcome Yarn</h2>
+                <p>Since version 2.3, we use Yarn for the package manager. Therefore, you need to install Yarn inside your machine. Yarn will easier for you to manage third-party libraries. You can see all the third-party libraries we use in the <code>package.json</code> file. Get started with <a href="https://yarnpkg.com/en/docs/getting-started">Yarn</a>. After installing Yarn on your machine, run the following command:</p>
+                <pre class="language-bash code-toolbar"><code class=" language-bash">yarn stisla-start
+             </code><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+                <h2 id="welcome-gulp">Welcome Gulp</h2>
+                <p>Besides Yarn, we also added Gulp to make it easier in the development phase. You can <a href="https://gulpjs.com/docs/en/getting-started/quick-start">learn Gulp</a> on the official site, we add the following commands:</p>
+                <pre class="language-bash code-toolbar"><code class=" language-bash"><span class="token comment"># Creating directories</span>
+             gulp folder
+
+             <span class="token comment"># Minify images</span>
+             gulp image
+
+             <span class="token comment"># Compiling SCSS</span>
+             gulp scss
+
+             <span class="token comment"># Compiling Nunjucks</span>
+             gulp html
+
+             <span class="token comment"># Compiling all for distribution</span>
+             gulp dist
+
+             <span class="token comment"># Start development</span>
+             yarn dev <span class="token comment"># or `gulp`</span>
+             </code><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+                <h2 id="welcome-nunjucks">Welcome Nunjucks</h2>
+                <p>Since version 2.3, we started using template engine to make it easy to develop. All HTML files in the <code>pages/</code> folder are compiled from the template engine we use. We use <a href="https://github.com/mozilla/nunjucks">Nunjucks</a> as a template engine, because the syntax is readable and easy to learn.</p>
+                <div class="alert alert-danger">
+                   Beware! If you recompile the template engine, you will lose all the changes you have made to all files in the <code>pages/</code> folder
+                </div>
+                <h2 id="restructuring-directories">Restructuring Directories</h2>
+                <p>In version 2.2, we have only 2 directories, <code>dist</code> and <code>sources</code>. For version 2.3, we changed the directory structure to make it easier for development. </p>
+                <pre class="language-html code-toolbar"><code class=" language-html">- assets
+               - css
+               - js
+               - img
+               - fonts
+             - pages
+             - sources
+               - ai
+               - scss
+               - pages
+             </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+                <p>The above is a new directory structure. All source codes such as <code>scss</code>, <code>nunjucks</code> etc. are placed in the <code>sources</code> folder. Meanwhile, outside it is a folder for distribution.</p>
+                <h2 id="all-common-dependencies-use-cdn">All Common Dependencies Use CDN</h2>
+                <p>All common dependencies, such as Bootstrap, Font Awesome, jQuery, Popper, NiceScroll, Moment.js and Google Fonts are using CDN. With this, you can save space and be faster.</p>
+                <pre class="language-html code-toolbar"><code class=" language-html">  <span class="token comment">&lt;!-- General CSS Files --&gt;</span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://use.fontawesome.com/releases/v5.7.2/css/all.css<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+               <span class="token comment">&lt;!-- General JS Scripts --&gt;</span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://code.jquery.com/jquery-3.3.1.min.js<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+             </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+                <p>Even so, you can make it locally, we have added it to the <code>package.json</code> file.</p>
+                <h2 id="all-images-in-css-are-converted-to-base64">All Images in CSS are Converted to Base64</h2>
+                <p>All images needed in CSS, we convert to Base64 code, this will resolve the <code>path</code> problem (especially on Rails).</p>
+                <h2 id="added-several-variables">Added Several Variables</h2>
+                <p>In version 2.3, we added several new variables, including:</p>
+                <pre class="language-scss code-toolbar"><code class=" language-scss"><span class="token property"><span class="token variable">$colors</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+               <span class="token number">...</span>
+               <span class="token comment">// Form Control</span>
+               <span class="token property">formcontrol_normal_background</span><span class="token punctuation">:</span>    <span class="token hexcode">#fdfdff</span>,
+               <span class="token property">formcontrol_normal_border</span><span class="token punctuation">:</span>        <span class="token hexcode">#e4e6fc</span>,
+               <span class="token property">formcontrol_focus_background</span><span class="token punctuation">:</span>     <span class="token hexcode">#fefeff</span>,
+               <span class="token property">formcontrol_focus_border</span><span class="token punctuation">:</span>         <span class="token hexcode">#95a0f4</span>,
+
+               <span class="token comment">// Utilities</span>
+               <span class="token property">section_title_line</span><span class="token punctuation">:</span> <span class="token hexcode">#6777ef</span>
+             <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+             <span class="token property"><span class="token variable">$font_family</span></span><span class="token punctuation">:</span>   <span class="token string">'Nunito'</span>, <span class="token string">'Segoe UI'</span>, arial<span class="token punctuation">;</span>
+             <span class="token property"><span class="token variable">$font_weight</span></span><span class="token punctuation">:</span>   <span class="token number">400</span><span class="token punctuation">;</span>
+             <span class="token property"><span class="token variable">$font_size</span></span><span class="token punctuation">:</span>     <span class="token number">14</span>px<span class="token punctuation">;</span>
+             </code><div class="toolbar"><div class="toolbar-item"><span>Sass (Scss)</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+              <div class="d-flex justify-content-lg-end"><a href="#/en/2.3/starter/third-party-libraries" class="btn btn-white btn-icon icon-right btn-lg">Next: Third-party Libraries <i class="fas fa-chevron-right"></i></a></div>
+
+
+
+
+             <div class="section-header">
+                <h1 id="card">Card</h1>
+                <div class="ml-auto"><a href="#/en/2.3/javascript/introduction" class="btn btn-white btn-icon icon-right btn-lg">Skip to Introduction <i class="fas fa-chevron-right"></i></a></div>
+             </div>
+             <hr>
+             <p><a name="card"></a></p>
+             <h2 id="card-1">Card</h2>
+             <p>This template is Bootstrap 4 based, so we use the card to make the grouping in the layout.</p>
+             <p>We also changed a little style on this Bootstrap built-in card. To create a card use the following structure.</p>
+             <div class="preview">
+                <div class="card">
+                   <div class="card-header">
+                      <h4>Card title</h4>
+                   </div>
+                   <div class="card-body">
+                      Card content
+                   </div>
+                   <div class="card-footer">
+                      Card footer
+                   </div>
+                </div>
+             </div>
+             <pre class="language-html code-toolbar"><code class=" language-html"><span class="token comment">&lt;!-- card wrapper --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token comment">&lt;!-- card header --&gt;</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-header<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token comment">&lt;!-- card title --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>Card title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+              <span class="token comment">&lt;!-- card body --&gt;</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                Card content
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+              <span class="token comment">&lt;!-- card footer --&gt;</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-footer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                Card footer
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+             <p>If you want to create card without header you can add <code>.card-body</code> as a additional class of <code>.card</code></p>
+             <div class="preview">
+                <div class="card card-body">
+                   Card without Header
+                </div>
+             </div>
+             <p>You can also customize the border-top color of the card by adding additional classes as follows.</p>
+             <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card card-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            ...
+            ..
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+             <p>Here are the colors supported on the card.</p>
+             <div class="badge badge-primary">.card-primary</div>
+             <div class="badge badge-secondary">.card-secondary</div>
+             <div class="badge badge-success">.card-success</div>
+             <div class="badge badge-danger">.card-danger</div>
+             <div class="badge badge-warning">.card-warning</div>
+             <div class="badge badge-info">.card-info</div>
+             <div class="badge badge-dark">.card-dark</div>
+             <p><a name="card-collapsable"></a></p>
+             <h2 id="collapsable-card">Collapsable Card</h2>
+             <p>In addition, you can also create a collapsable card.</p>
+             <div class="preview">
+                <div class="card">
+                   <div class="card-header">
+                      <h4>Show/Hide</h4>
+                      <div class="card-header-action">
+                         <a data-collapse="#mycard-collapse" class="btn btn-icon btn-info" href="#"><i class="fas fa-minus"></i></a>
+                      </div>
+                   </div>
+                   <div class="collapse show" id="mycard-collapse" style="">
+                      <div class="card-body">
+                         You can show or hide this card.
+                      </div>
+                      <div class="card-footer">
+                         Card Footer
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-header<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>Show/Hide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-header-action<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">data-collapse</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#mycard-collapse<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-icon btn-info<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fas fa-minus<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>collapse show<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mycard-collapse<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                You can show or hide this card.
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-footer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                Card Footer
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+             <p><a name="card-dismissible"></a></p>
+             <h2 id="dismissible-card">Dismissible Card</h2>
+             <p>Lastly, you can also create a dismissible card.</p>
+             <div class="preview">
+                <div class="card" id="mycard-dimiss">
+                   <div class="card-header">
+                      <h4>Dismiss</h4>
+                      <div class="card-header-action">
+                         <a data-dismiss="#mycard-dimiss" class="btn btn-icon btn-danger" href="#"><i class="fas fa-times"></i></a>
+                      </div>
+                   </div>
+                   <div class="card-body">
+                      You can dimiss this card.
+                   </div>
+                   <div class="card-footer">
+                      Card Footer
+                   </div>
+                </div>
+             </div>
+             <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mycard-dimiss<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-header<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>Dismiss<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+              <span class="token comment">&lt;!-- card dismiss toggle --&gt;</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-header-action<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">data-dismiss</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/#mycard-dimiss<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-icon<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ion ion-close<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              You can dimiss this card.
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-footer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              Card Footer
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+             <div class="alert alert-primary alert-has-icon mt-4">
+                <div class="alert-icon"><i class="far fa-lightbulb"></i></div>
+                <div class="alert-body">
+                   <div class="alert-title">More Information</div>
+                   <p>You can see other examples of card usage in the file <code>pages/bootstrap-card.html</code></p>
+                </div>
+             </div>
+             <div class="d-flex justify-content-lg-end"><a href="#/en/2.3/javascript/introduction" class="btn btn-white btn-icon icon-right btn-lg">Next: Introduction <i class="fas fa-chevron-right"></i></a></div>
+
+
+
+
+
+            <div class="section-header">
+               <h1 id="modal">Modal</h1>
+               <div class="ml-auto"><a href="#/en/2.3/javascript/chat" class="btn btn-white btn-icon icon-right btn-lg">Skip to Chat <i class="fas fa-chevron-right"></i></a></div>
+            </div>
+            <hr>
+            <p><a name="modal"></a></p>
+            <h2 id="modal-1">Modal</h2>
+            <p>As we know, to create a modal in Bootstrap requires the HTML structure to be a modal. It might be easy if we just make some modals. But, if we want to make a lot of modals would require a lot of HTML structure as well.</p>
+            <p>In this template we have provided a simple plugin to create a reusable modal. So you no longer need the HTML structure for every time you want to create a modal.</p>
+            <p>Here is a simple modal example.</p>
+            <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>toggle-modal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Launch Modal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+             <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#toggle-modal'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fireModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+               title<span class="token punctuation">:</span> <span class="token string">'My Modal'</span><span class="token punctuation">,</span>
+               content<span class="token punctuation">:</span> <span class="token string">'Hello!'</span>
+             <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+         </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+            <div class="preview">
+               <div class="text-center">
+                  <button class="btn btn-primary trigger--fire-modal-3" id="toggle-modal">Launch Modal</button>
+               </div>
+            </div>
+            <p>Also, you can add buttons on modal.</p>
+            <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>toggle-modal-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Launch Modal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+             <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#toggle-modal-1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fireModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+               title<span class="token punctuation">:</span> <span class="token string">'My Modal'</span><span class="token punctuation">,</span>
+               body<span class="token punctuation">:</span> <span class="token string">'Hello, dude!'</span><span class="token punctuation">,</span>
+               buttons<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                 <span class="token punctuation">{</span>
+                   text<span class="token punctuation">:</span> <span class="token string">'Close'</span><span class="token punctuation">,</span>
+                   <span class="token keyword">class</span><span class="token punctuation">:</span> <span class="token string">'btn btn-secondary'</span><span class="token punctuation">,</span>
+                   handler<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>current_modal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                   $<span class="token punctuation">.</span><span class="token function">destroyModal</span><span class="token punctuation">(</span>current_modal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                   <span class="token punctuation">}</span>
+                 <span class="token punctuation">}</span>
+               <span class="token punctuation">]</span>
+             <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+         </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+            <div class="preview">
+               <div class="text-center">
+                  <button class="btn btn-primary trigger--fire-modal-4" id="toggle-modal-1">Launch Modal</button>
+               </div>
+            </div>
+            <p>In addition, you can also create a simple confirmation box by using this attribute on your button.</p>
+            <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-danger<span class="token punctuation">"</span></span> <span class="token attr-name">data-confirm</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Are you sure?|This action can<span class="token punctuation">'</span>t be undone<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Delete<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+         </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+            <div class="preview">
+               <div class="text-center">
+                  <button class="btn btn-danger" data-confirm="Are you sure?|This action can't be undone" data-confirm-yes="alert('Deleted');" data-confirm-no="alert('You\'re awesome');">Delete</button>
+               </div>
+            </div>
+            <p><a name="modal-usage"></a></p>
+            <h2 id="usage">Usage</h2>
+            <p><strong>Syntax</strong></p>
+            <pre class="language-javascript code-toolbar"><code class=" language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#toggle'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fireModal</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         </code><div class="toolbar"><div class="toolbar-item"><span>JavaScript</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+            <p><a name="modal-options"></a></p>
+            <h2 id="options">Options</h2>
+            <div class="table-responsive">
+               <table class="table table-striped">
+                  <tbody>
+                     <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th data-width="600">Description</th>
+                     </tr>
+                     <tr>
+                        <td>size</td>
+                        <td><code>string</code></td>
+                        <td><code>modal-md</code></td>
+                        <td>Bootstrap modal size class</td>
+                     </tr>
+                     <tr>
+                        <td>center</td>
+                        <td><code>boolean</code></td>
+                        <td><code>true</code></td>
+                        <td>Position the modal in the center of the screen</td>
+                     </tr>
+                     <tr>
+                        <td>animation</td>
+                        <td><code>boolean</code></td>
+                        <td><code>true</code></td>
+                        <td>Provides animated effects on modal</td>
+                     </tr>
+                     <tr>
+                        <td>title</td>
+                        <td><code>string</code></td>
+                        <td><code>Modal Title</code></td>
+                        <td>Title for your modal</td>
+                     </tr>
+                     <tr>
+                        <td>closeButton</td>
+                        <td><code>boolean</code></td>
+                        <td><code>true</code></td>
+                        <td>Close button for modal</td>
+                     </tr>
+                     <tr>
+                        <td>header</td>
+                        <td><code>boolean</code></td>
+                        <td><code>true</code></td>
+                        <td>Modal header</td>
+                     </tr>
+                     <tr>
+                        <td>bodyClass</td>
+                        <td><code>string</code></td>
+                        <td><code>null</code></td>
+                        <td>Classes for modal body, for example <code>my-modal body-class</code></td>
+                     </tr>
+                     <tr>
+                        <td>footerClass</td>
+                        <td><code>string</code></td>
+                        <td><code>null</code></td>
+                        <td>Classes for modal footer, for example <code>my-modal footer-class</code></td>
+                     </tr>
+                     <tr>
+                        <td>body</td>
+                        <td><code>string</code></td>
+                        <td><code>null</code></td>
+                        <td>Content for your modal, can be <code>string</code> or <i>selector</i>, for example: <code>#modal-login-part</code> and add the <code>modal-part</code> class to the element.</td>
+                     </tr>
+                     <tr>
+                        <td>buttons</td>
+                        <td><code>object</code></td>
+                        <td><code>[]</code></td>
+                        <td>
+                           Add some buttons to the modal footer, for example: 
+                           <pre data-name="Modal Buttons" class="language-js code-toolbar"><code class=" language-js"><span class="token punctuation">[</span><span class="token punctuation">{</span>
+         submit<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token operator">|</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+         <span class="token keyword">class</span><span class="token punctuation">:</span> <span class="token string">'custom-class'</span><span class="token punctuation">,</span>
+         id<span class="token punctuation">:</span> <span class="token string">'my-id'</span><span class="token punctuation">,</span>
+         text<span class="token punctuation">:</span> <span class="token string">'Submit'</span><span class="token punctuation">,</span>
+         handler<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+         <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Clicked'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token punctuation">}</span>
+         <span class="token punctuation">}</span><span class="token punctuation">]</span></code><div class="toolbar"><div class="toolbar-item"><span>Js</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>autoFocus</td>
+                        <td><code>boolean</code></td>
+                        <td><code>true</code></td>
+                        <td>Automatic focus on the first input element in the modal body (if any)</td>
+                     </tr>
+                     <tr>
+                        <td>created</td>
+                        <td><code>function</code></td>
+                        <td><code>null</code></td>
+                        <td>Callback when a modal element has been created</td>
+                     </tr>
+                     <tr>
+                        <td>appended</td>
+                        <td><code>function</code></td>
+                        <td><code>null</code></td>
+                        <td>Callback when a modal element has been appended to the document body</td>
+                     </tr>
+                     <tr>
+                        <td>submit</td>
+                        <td><code>function</code></td>
+                        <td><code>null</code></td>
+                        <td>Callback when the form in the modal body is submitted</td>
+                     </tr>
+                     <tr>
+                        <td>modal</td>
+                        <td><code>object</code></td>
+                        <td><code>{}</code></td>
+                        <td>Bootstrap modal options, <a href="https://getbootstrap.com/docs/4.1/components/modal/#options">click here</a> for details</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="d-flex justify-content-lg-end"><a href="#/en/2.3/javascript/chat" class="btn btn-white btn-icon icon-right btn-lg">Next: Chat <i class="fas fa-chevron-right"></i></a></div>
+         
+                      
+
+
+
+            </div>
+         </section>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- General JS Scripts -->
+  <script src="../assets/modules/jquery.min.js"></script>
+  <script src="../assets/modules/popper.js"></script>
+  <script src="../assets/modules/tooltip.js"></script>
+  <script src="../assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="../assets/modules/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.8/marked.min.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="../assets/modules/prism/prism.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  <script src="../assets/modules/sticky-kit.js"></script>
+  <script src="../assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+  <!-- Template JS File -->
+  <script src="https://unpkg.com/navigo@6.0.2/lib/navigo.min.js"></script>
+</body>
+</html>

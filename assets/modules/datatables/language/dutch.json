@@ -1,0 +1,21 @@
+{
+    "sEmptyTable":     "Geen data beschikbaar in de tabel",    
+    "sInfoFiltered":   "(gefilterd op basis van _MAX_ items)",
+    "sInfoPostFix":    "",
+    "sInfoThousands":  ",",
+    "sLoadingRecords": "Bezig met laden...",
+    "sProcessing":     "Verwerken...",
+    "sZeroRecords":    "Geen overeenkomende records gevonden",
+    "oPaginate": {
+        "sFirst":    "Eerste",
+        "sLast":     "Laatste",
+        "sNext":     "De volgende",
+        "sPrevious": "Vorige"
+    },
+    "pSearch": "Zoeken",
+    "oAria": {
+        "sSortAscending":  ": activeer om de kolom oplopend te sorteren",
+        "sSortDescending": ": activeer om de kolom aflopend te sorteren"
+    },
+    "sSearchPlaceholder": "Zoeken..."
+}

@@ -1,0 +1,59 @@
+
+.download-area {
+    margin-bottom: -230px;
+    position: relative;
+    z-index: 9;
+
+    .download-wrapper {
+        background-image: url('../images/download-bg.svg');
+
+        .download-content {
+            padding: 125px 0;
+
+            .download-btns {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    padding: 13px 30px;
+                    background: $white;
+                    border-radius: 10px;
+                    @include box-shadow(0px 3px 6px rgba(123, 123, 123, 0.16));
+                    @include transition(.3s);
+                    color: $body-color;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                    &.btn-hover::after {
+                        background: rgba($theme-color, .05);
+                    }
+
+
+                    span.icon {
+                        font-size: 24px;
+                        margin-right: 20px;
+                        @include text-gradient;
+                    }
+
+                    span.text {
+                        text-align: left;
+                        font-size: 18px;
+                        font-weight: 700;
+
+                        b {
+                            font-size: 12px;
+                            font-weight: 400;
+                            display: block;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

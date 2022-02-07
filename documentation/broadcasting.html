@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>ChatPion Documentation</title>
+  <link rel="shortcut icon" href="../assets/img/favicon.png">
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="../assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="../assets/modules/prism/prism.css">
+  <link rel="stylesheet" href="../assets/modules/chocolat/dist/css/chocolat.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <a href="#" class="nav-link sidebar-gone-show h-auto" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
+        <a href="../" class="navbar-brand text-center">
+          <img src="../assets/img/logo.png" style="max-width: 150px;">
+        </a>
+        <div class="nav-collapse mr-lg-auto mr-0 ml-auto m-lg-0">
+          <!-- <a class="sidebar-gone-show nav-collapse-toggle sidebar-gone-show nav-link" href="#">
+            <i class="fas fa-ellipsis-v"></i>
+          </a> -->
+        </div>
+        <ul class="navbar-nav d-lg-flex align-items-center justify-content-end w-25">
+          <li class="ml-lg-2"><a href="../api/doc" target="_BLANK" class="nav-link btn btn-outline-primary text-primary btn-icon icon-left"><i class="fas fa-plug"></i> API Doc</a></li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="../"><img src="../assets/img/favicon.png"></a>
+          </div>
+          <ul>
+            <li><a href="index.html" >Dashboard</a></li>
+            <li>Integration
+              <ul>
+                <li><a href="import-accounts.html" >Facebook & Instagarm</a></li>
+                <li><a href="api-channels.html">API Channels</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul> COMMENT FEATURE
+                <li><a href="comment-growth-tools.html" >Comment growth tools</a></li>
+                
+              </ul>
+            </li>
+             <li>
+              <ul>MESSENGER TOOLS
+                <li><a href="subscriber-manager.html" >Subscriber Manager</a></li>
+                <li><a href="livechat.html" >Live Chat</a></li>
+                <li><a href="flow-builder.html" >Bot Manager</a></li>
+                <li><a href="broadcasting.html" class="active">Broadcasting</a></li>
+              </ul>
+            </li>
+            
+            
+            
+            <li>Ecommerce 
+              <ul>
+                <li><a href="ecommerce.html" >Ecommerce Store</a></li>
+                
+              </ul>
+            </li>
+            <li>Posting Feature
+              <ul>
+                <li><a href="social-posting.html" >Social Posting</a></li>
+                
+              </ul>
+            </li>
+            
+          </ul>              
+        <!-- Menu -->
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content" style="min-height: 352px;">
+         <section class="section">
+            <div class="section-body">
+
+              <ul id="submenu">
+                 <li><a href="#introduction">Introduction</a></li>
+                 <li><a href="#campaign-details">Campaign Details</a></li>
+                 <li><a href="#targeting-option">Targeting options</a></li>
+                 <li><a href="#message-template">Message Template</a></li>
+                 <li><a href="#text-message">Text message type</a></li>
+                 <li><a href="#multimedia">Image, Audio, Video and File message type</a></li>
+                 <li><a href="#quick-reply">Quick Reply</a></li>
+                 <li><a href="#postback-quick-reply">Postback quick reply</a></li>
+                 <li><a href="#user-mail-quick-reply">User email address quick reply</a></li>
+                 <li><a href="#text-with-buttons">Text with button message type</a></li>
+                 <li><a href="#postback-text-with-button">Postback text with buttons</a></li>
+                 <li><a href="#weburl-text-with-button">Web url text with buttons</a></li>
+                 <li><a href="#user-birthday-text-with-button">User’s birthday text with buttons</a></li>
+                 <li><a href="#call-us-text-with-button">Call us text with buttons</a></li>
+                 <li><a href="#unsubscribe-text-with-buttons">Unsubscribe text with buttons</a></li>
+                 <li><a href="#generic-template">Generic template message type</a></li>
+                 <li><a href="#media">Media</a></li>
+                 <li><a href="#sms-email-broadcasting">SMS/Email broadcasting</a></li>
+                 <li><a href="#create-group">Create group</a></li>
+                 <li><a href="#create-contact">Create Contact</a></li>
+                 <li><a href="#import-export-delete-contacts">Import, export and delete contacts</a></li>
+                 <li><a href="#import-contacts">Import contacts</a></li>
+                 <li><a href="#export-contacts">Export contacts</a></li>
+                 <li><a href="#delete-contacts">Delete contacts</a></li>
+                 <li><a href="#template">Template</a></li>
+                 <li><a href="#email-template">Email Template</a></li>
+                 <li><a href="#create-template-by-drag-and-drop">Create template by drag and drop</a></li>
+                 <li><a href="#sms-template">SMS template</a></li>
+                 
+
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+          
+
+                 
+                 
+              </ul>
+
+               <div class="section-header">
+                  <h1 id="introduction">Broadcasting</h1>
+                  
+               </div>
+               <hr>
+               
+               
+               <p>In this how-to blog, I will show you how to create a campaign for broadcasting in Chatpion, the world’s best marketing application. </p>
+
+               <p>To create a campaign for broadcasting, first, go to the dashboard of ChatPion. Then click on the menu called Broadcasting at the left-sidebar of the dashboard.</p>
+
+               <img src="assets/broadcasting_screenshots/broadcasting_in_dashboard.png" class="img-thumbnail"/>
+
+               <p>And instantly, will appear a page that is divided into two sections – Messenger Broadcasting and SMS/email Broadcasting. And the SMS/email Broadcasting is divided into three parts — CONTACT, TEMPLATE, and BROADCAST CAMPAIGN.</p>
+
+               <p>To create a campaign for Messenger Broadcasting, click on the Messenger Broadcasting option.</p>
+
+               <img src="assets/broadcasting_screenshots/broadcast_interface.png" class="img-thumbnail"/>
+
+               <p>And instantly, a page called OTN subscriber broadcast will appear with a button called create campaign. Now click on the create campaign button.</p>
+
+               <img src="assets/broadcasting_screenshots/create campaign for broadcast.png" class="img-thumbnail"/>
+
+               <p>And instantly, a page called Add OTN subscriber broadcast will appear with an instruction at the top of the page and a form. The form is divided into three parts — Campaign details, Targeting options, Message template.</p>
+
+               <p> Please, read the instruction carefully before starting to create the campaign.</p>
+
+              <p>Now you have to fill out the form.</p>
+
+              <p>First, fill out the Campaign related fields.</p>
+
+              <div class="section-header">
+                  <h1 id="campaign-details">Campaign Details</h1>
+                  
+               </div>
+               <hr>
+
+              
+
+              <p>Give a name for the campaign in the campaign name field. After that, select a Facebook page from the select page field.</p>
+
+              <p>Then you have to select an OTN postback template from the OTN postback template field. Just click on the OTN postback template field and a drop-down menu of different OTN postback templates will appear. Now select an OTN postaback template from the drop-down menu. Of course, you can select multiple OTN postback templates from the drop-down menu. </p>
+
+              <div class="section-header">
+                  <h1 id="targeting-option">Targeting options</h1>
+                  
+               </div>
+               <hr>
+
+            
+
+              <p>Now come to the Targeting options related fields.</p>
+
+              <p>In the field called Target by labels, you can select labels from a drop-down menu of different labels. Of course, you can select multiple labels. The message will be sent to the subscribers who are on these labels. To know more, click on the tooltip button. </p> 
+
+              <p>You can also select labels in the Exclude by label fields. Of course, you can select multiple labels in the field. The message will not be sent to the subscribers who are on these labels. Moreover, unsubscribe label will be excluded automatically. To know more, click on the tooltip button. </p>
+
+              <p>You can also select gender in the gender field. Click on the gender field and a drop-down menu of male and female will appear. From the drop-down menu, select male or female. If you select male, the message will be sent only to the male subscribers. On the other hand, if you select females, the message will be sent only to female subscribers. </p>
+
+              <p>In the time zone field, select a time zone. And the message will be sent to the subscribers who live in the selected time zone.</p> 
+
+              <p>You can also select a locale in the locale field. Just click on the locale field, a drop-down menu of different locales will appear. Now select a locale from the drop-down menu. The message will be sent to the people who fall in the selected locale.</p>
+
+              <div class="section-header">
+                  <h1 id="message-template">Message Template</h1>
+                  
+               </div>
+               <hr>
+
+              
+
+              <p>Now come to the message templated related fields. </p> 
+
+              <p>In the select message type field, you can select a message type. Click on the field and a drop-down menu of different message type will appear. From the drop-down menu, you have to select a message type.</p>
+
+              <div class="section-header">
+                  <h1 id="text-message">Text message type</h1>
+                  
+               </div>
+               <hr>
+
+
+
+              <p>If you select text as a message type, you have to provide a text message in the message field. Also, you can include first name or last name of the subscribers.</p> 
+
+              <p>Well, after that, you will see a sending time button. If you want to schedule the post, turn on the button.  And instantly, two additional fields – Schedule time and time zone – will appear. Now click on the schedule time field and a calendar of date and time will appear. From the calendar, select a date and time. In the time zone field, select a time zone. Now click on the create campaign button and a successful message will appear. That is, the campaign has been created.</p>
+
+
+               <img src="assets/broadcasting_screenshots/subscriber broadcast form.png" class="img-thumbnail"/>
+
+                
+               <div class="section-header">
+                  <h1 id="multimedia">Image, Audio, Video and File message type</h1>
+                  
+               </div>
+               <hr>
+
+              <p>And if you select image, audio, video, or file as the message type, an upload button will appear. By clicking on the upload button, you have to upload image, audio, video or file for the respective message type.</p>
+
+
+               <img src="assets/broadcasting_screenshots/message_type_image.png" class="img-thumbnail"/>
+               <hr>
+               <img src="assets/broadcasting_screenshots/message_type_audio.png" class="img-thumbnail"/>
+               <hr>
+               <img src="assets/broadcasting_screenshots/message_type_video.png" class="img-thumbnail"/>
+               <hr>
+               <img src="assets/broadcasting_screenshots/message_type_file.png" class="img-thumbnail"/>
+
+               
+
+               <div class="section-header">
+                  <h1 id="quick-reply">Quick Reply</h1>
+                  
+               </div>
+               <hr>
+
+              <p>On the other hand, if you select quick reply, some fields – message, button text, button type – will appear. Write a text message in the message field, write a text for button in the button text field. Select a button type in the button type field. Click on the button type field and drop-down menu of different button type – Post Back, User phone number, User email address – will appear. From the drop-down menu, select a button type.</p>
+
+              <img src="assets/broadcasting_screenshots/message_type_quick_reply.png" class="img-thumbnail"/>
+
+              
+               <div class="section-header">
+                  <h1 id="postback-quick-reply">Postback quick reply</h1>
+                  
+               </div>
+               <hr>
+
+               <p>If you select postback, another field called postback id will appear. In the postback id field, you have to select a pre-defined postback template. You can also create a postback id by clicking on the add button.</p>
+
+               <p>You can also add more button by clicking on the add more button.</p>
+
+               <img src="assets/broadcasting_screenshots/quick_reply_postback.png" class="img-thumbnail"/>
+
+              <div class="section-header">
+                  <h1 id="user-phone-quick-reply">User phone number quick reply</h1>
+                  
+               </div>
+               <hr>
+              
+
+              <p>In the quick reply message type, you can select the user phone number as the button type. Just as you select the User phone number as the button type the Button text field will be disabled. </p>
+
+              <img src="assets/broadcasting_screenshots/quick_reply_user_phone_number.png" class="img-thumbnail"/>
+
+               <div class="section-header">
+                  <h1 id="user-mail-quick-reply">User email address quick reply</h1>
+                  
+               </div>
+               <hr>
+
+              
+              <p>In the quick reply message type, you can select the user email address as the button type. Just as you select the User email address as the button type the Button text field will be disabled.</p>
+
+              <img src="assets/broadcasting_screenshots/quick_reply_user_email_address.png" class="img-thumbnail"/>
+
+
+              
+                <div class="section-header">
+                  <h1 id="text-with-buttons">Text with button message type</h1>
+                  
+               </div>
+               <hr>
+
+              <p>On the other hand, if you select the Text with buttons as a reply type, some  fields — Message, Button text and Button type —  will appear. Write a message in the message field, write a text for button in the Button text field and select a button type from the button type field.</p>
+
+              <p>Click on the button type field and a drop-down menu of different button type – postback, weburl, Webview(full),  Webview(tall),  Webview(compact), User’s birthday, Call us, Unsubscribe –  will appear. </p>
+
+              <img src="assets/broadcasting_screenshots/message_type_text_with_buttons.png" class="img-thumbnail"/>
+
+              
+               <div class="section-header">
+                  <h1 id="postback-text-with-button">Postback text with buttons </h1>
+                  
+               </div>
+               <hr>
+
+              <p>If you select postback, a new field called postback id will appear. In the postback id field, you have to select a predefined postback template. Also, you can create a postback template by clicking on the add button under the postback id field. </p>
+
+              <img src="assets/broadcasting_screenshots/text_with_button_postback.png" class="img-thumbnail"/>
+
+              
+              <div class="section-header">
+                  <h1 id="weburl-text-with-button">Web url text with buttons</h1>
+                  
+               </div>
+               <hr>
+
+              <p>On the other hand, if you select  Weburl, Webview(full), Webview(tall) or webview(compact), a new field called Web url will appear. In the Web url field, you have to paste a web url. When a user clicks on the button, the user will be redirected to the Web url.</p>
+
+              <img src="assets/broadcasting_screenshots/text_with_buttons_weburl.png" class="img-thumbnail"/>
+
+               
+
+              <div class="section-header">
+                  <h1 id="user-birthday-text-with-button">User’s birthday text with buttons</h1>
+                  
+               </div>
+               <hr>
+
+              <p>You can also select User’s birthday button type from the drop-down menu of Button type field. </p>
+
+              <img src="assets/broadcasting_screenshots/text_with_button_user's_birthday.png" class="img-thumbnail"/>
+
+              
+
+               <div class="section-header">
+                  <h1 id="call-us-text-with-button">Call us text with buttons</h1>
+                  
+               </div>
+               <hr>
+
+
+              <p>You can also select Call us button type from the drop-down menu of different button type. Just as you select the Call use button, a field called phone number will appear. And you have to provide a phone number in the phone number field. Just user click on the call us button, a call to the phone number will make automatically. </p>
+
+              <img src="assets/broadcasting_screenshots/text with button call us.png" class="img-thumbnail"/>
+
+              Unsubscribe text with buttons 
+
+              <div class="section-header">
+                  <h1 id="unsubscribe-text-with-buttons">Unsubscribe text with buttons</h1>
+                  
+               </div>
+               <hr>
+
+              <p>You can also select Unsubscribe button type from the drop-down menu of different button type. When a user clicks on the Unsubscribe button in the messenger, the user will be unsubscribed. </p>
+
+              <img src="assets/broadcasting_screenshots/text_with_button_unsubscribe.png" class="img-thumbnail"/>
+
+              
+
+              <div class="section-header">
+                  <h1 id="generic-template">Generic template message type</h1>
+                  
+               </div>
+               <hr>
+
+              <p>Well, you can also select Generic template as a message type. Just as you select the Generic template, an upload button and some additional fields will appear.</p>
+
+              <p>First, upload an image by clicking on the upload button. Then paste a link in the image click destination link field. When a user click on the image, the user will be redirected to the link.</p>
+
+              <p>After that, you have to provide a title and a subtitle in the title and subtitle field. In the button text field, write a text for the button. Then you have to select a button type from the drop-down menu of the different button type. You already know about the different types of buttons. </p>
+
+              <img src="assets/broadcasting_screenshots/generic template.png" class="img-thumbnail"/>
+
+              
+               <div class="section-header">
+                  <h1 id="carousel">Carousel</h1>
+                  
+               </div>
+               <hr>
+
+              <p>If you select carousel as the message type, the same fields as the generic template will appear. Now you have to fill out the fields. Below the fields, you will see add more button and add more template button. If you want to add more buttons click on the button Called Add more button. And if you want to add more templates, click on the button called Add more template button. </p>
+
+              <p>To make a carousel, you need at least two templates.</p> 
+
+              <img src="assets/broadcasting_screenshots/carousel.png" class="img-thumbnail"/>
+
+
+               <div class="section-header">
+                  <h1 id="media">Media</h1>
+                  
+               </div>
+               <hr>
+
+              <p>If you select Media as the message type, some fields – media url, button text and button type – will appear. Now you have to fill-out these fields. Click on the tooltip to see how to get the media url.</p>
+
+              <p>You can add more buttons by clicking on the button called Add more button. </p>
+
+              <img src="assets/broadcasting_screenshots/media.png" class="img-thumbnail"/>
+
+
+              
+
+
+               <div class="section-header">
+                  <h1 id="sms-email-broadcasting">SMS/Email broadcasting</h1>
+                  
+               </div>
+               <hr>
+
+               <p>To create SMS/Email broadcasting, first, you have to create contact. To create contact, first, you need to create a group.</p>
+                <div class="section-header">
+                  <h1 id="create-group">Create group</h1>
+                  
+               </div>
+               <hr>
+
+               
+
+               <p>To create a group, click on the button called the group in the Contact option of SMS/email broadcasting section. </p>
+
+
+
+               <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/SMS_Email_broadcasting_group.png" class="img-thumbnail"/>
+
+               <p>And instantly, a new page called contact group with New group button will appear. Now click on the New group button. </p>
+               
+               <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/new group.png" class="img-thumbnail"/>
+
+               <p>Instantly, a modal with a field called group name will appear. Write a name in the field for the group and click the save button. And a successful message will appear. Now click on the close button to close the modal form. </p>
+
+              <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/add_contact_group_modal.png" class="img-thumbnail"/>
+
+              <p>Now the group will appear in the list of the group. You can also edit and delete the group by clicking on the edit and delete icon.</p>
+               <div class="section-header">
+                  <h1 id="create-contact">Create Contact</h1>
+                  
+               </div>
+               <hr>
+
+              <p>Now get back to the interface of the broadcasting and click on the contact button in the CONTACT option.</p>
+
+              <p>Instantly, a page called Contact Book will appear with a New contact button The predefined contacts will be present on the page. You can edit and delete the predefined contacts by clicking on the edit and delete button. Also, you can see the details of the contact by clicking on the view details(eye icon) button. </p>
+
+              <p> Click on the New contact button.</p>
+
+              <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/contact_book.png" class="img-thumbnail"/>
+
+              <p>Instantly, a modal form with some fields will appear. Fill-out the form and click on the Save button. And a successful message will appear. And the contacts you create will appear in the list on the Contact Book page.</p>
+
+              <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/new_contact_modal.png" class="img-thumbnail"/>
+
+              <p>From the list, you can edit and delete the predefined contacts by clicking on the edit and delete button. </p>
+
+              <p>Also, you can see the details of the contact by clicking on the view details(eye icon) button. Just as you click on the eye icon, a modal will appear with contact details. </p>
+
+              <p>On the modal, you can assign sequence to the contact. Also, you can write a note for a contact. Of course, you can see the contact details on the modal form.</p>
+
+              <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/contact details.png" class="img-thumbnail"/>
+
+              <div class="section-header">
+                  <h1 id="import-export-delete-contacts">Import, export and delete contacts</h1>
+                  
+               </div>
+               <hr>
+               <p>Also, you can import and export contacts easily. Of course, you can delete selected contacts. </p>
+
+               <p>Click on the options button of the Contact book page, and instantly, a drop-down menu of three buttons — import, export, and delete — will appear.</p>
+
+               <img src="assets/broadcasting_screenshots/export_import_delete_contacts.png" class="img-thumbnail"/>
+
+               
+
+               <div class="section-header">
+                  <h1 id="import-contacts">Import contacts</h1>
+                  
+               </div>
+               <hr>
+                <p>To import contacts, click on the import button.</p>
+                <img src="assets/broadcasting_screenshots/import_button.png" class="img-thumbnail"/>
+
+                
+                <p> Instantly, a modal form called import contact(CSV) will appear. First, download the sample CSV file to see how to organize the CSV file.  </p>
+                <img src="assets/broadcasting_screenshots/sample_csv_file_download.png" class="img-thumbnail"/>
+
+                <p>The sample CSV file</p>
+                <img src="assets/broadcasting_screenshots/sample_csv_file_contacts.png" class="img-thumbnail"/>
+
+
+
+                <p>Select contact groups in the Contact group field of the modal form. Click on the Contact group field and a drop-down menu of different contact groups will appear. From the drop-down menu, select contact group. Of course, you can select multiple contact groups. </p>
+                
+                <p>Then you have to upload a CSV file of contacts you want to import. Upload a CSV file by clicking on the upload button. Then click on the import button of the modal form. </p>
+
+                <img src="assets/broadcasting_screenshots/import_Contact_csv_modal_form.png" class="img-thumbnail"/>
+
+                <p>Instantly, a successful message will appear. Then click on the cross button and the modal form will disappear.</p>
+                <img src="assets/broadcasting_screenshots/successful_message_modal_form.png" class="img-thumbnail"/>
+
+                <p> And you will see that the contacts have been added to the contact list. </p>
+
+                <div class="section-header">
+                  <h1 id="export-contacts">Export contacts</h1>
+                  
+               </div>
+               <hr>
+              <p>To export contacts, first, you have to select the contacts you want to export.</p>
+              <img src="assets/broadcasting_screenshots/select_contacts_to_export_modal_form.png" class="img-thumbnail"/>
+
+              <p>After that, click on the export button of the drop-down menu of the Option button. And a CSV file of the selected contacts will be downloaded.</p>
+              <img src="assets/broadcasting_screenshots/export_button.png" class="img-thumbnail"/>
+
+              
+              <div class="section-header">
+                  <h1 id="delete-contacts">Delete contacts</h1>
+                  
+               </div>
+               <hr>
+              <p>To delete contacts, first, you have to select the contacts you want to delete.</p>
+
+               <img src="assets/broadcasting_screenshots/select_contacts_to_delete_modal_form.png" class="img-thumbnail"/>
+
+               <p>Then click on the delete button of the drop-down menu of the option button.</p>
+
+                <img src="assets/broadcasting_screenshots/delete_button.png" class="img-thumbnail"/>
+
+              <p>Instantly, a modal form will appear with the ok and cancel button. To delete the contacts, click on the ok button and the selected contacts will be deleted. </p>
+
+              
+
+              <img src="assets/broadcasting_screenshots/delete_modal_form_cancel_ok.png" class="img-thumbnail"/>
+
+              
+
+
+
+
+
+
+              <div class="section-header">
+                  <h1 id="template">Template</h1>
+                  
+               </div>
+               <hr>
+
+              <div class="section-header">
+                  <h1 id="email-template">Email Template</h1>
+                  
+               </div>
+               <hr>
+
+               <p>Now get back to the interface of the broadcasting. On the template option, click on the Email button to create an email template.</p>
+
+               <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/template/interface_email_template.png" class="img-thumbnail"/>
+
+               <p>Instantly, a page called email template will appear with a button called new template. Now click on the new template button and a drop-down menu of two options – Rich Text Editor and drag and drop – will appear. Click on the Rich text editor.</p>
+
+               <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/template/email_template_new_template.png" class="img-thumbnail"/>
+
+               <p>Instantly a modal form called create template will appear with some fields – Template name, subject, content. Now you have to give a template name, write a subject in the subject field and write the content of the mail in the content field. Now click on the save button to save the template.</p>
+
+               <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/template/create_template_modal.png" class="img-thumbnail"/>
+
+               <p>Now the template will appear in a list of saved templates. Of course, you can edit and delete the template. Of course, you can view the template by clicking on the view template button. </p>
+
+                <div class="section-header">
+                  <h1 id="create-template-by-drag-and-drop">Create template by drag and drop</h1>
+                  
+               </div>
+               <hr>
+
+               <p>On the other hand, if you want to create a template by drag and drop, click on the drag and drop option of the drop-down menu. </p>
+
+               <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/template/create_template_by_drag_and_drop.png" class="img-thumbnail"/>
+
+               
+
+               <p>Instantly, a page with four options – no sidebar, left sidebar, Right sidebar, both sidebar – will appear.</p>
+
+               <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/template/template_for_drag_and_drop.png" class="img-thumbnail"/>
+
+               <p>With the four types of options, you can create four types of template. Click on any option and an editor will appear. On the right side of the editor, you will see a sidebar with some elements – Text, image, link, and divider. Now you have to drag the element and drop it on the editor.</p>
+
+
+
+              <p>Now drag the text element and drop it on the editor. Now double-click on the text element and a field will appear. And on the field, you have to write your text. Then click on the tick to save the text. Likewise, by clicking on the cross button, you can delete the text and the element.</p>
+
+              <p>Now drag the image element from the sidebar and drop it on the editor. Now double-click on the image element to upload an image. After you have uploaded an image, the image will appear on the image element.</p>
+
+              <p>Likewise, drag an link element where you have to provide an URL. Click on the element and a modal form will appear. In the first field of the modal, you have to provide an url. Then you have to write the title of the link. You can also change the color and background color of the bar of the link. You can also change the size and the position of the preview.</p>
+
+              <p>Also, you can drag and drop the divider element. The divider element will divide the element. Well, you can change the color of the divider.</p>
+
+              <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/template/email_template_with_element.png" class="img-thumbnail"/>
+              
+              <p>At the left bottom side of the editor, you will see some buttons – Layout options, save and quit, save template, save template and preview button.</p>
+              <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/template/settings_save_button_email_template.png" class="img-thumbnail"/>
+
+              <p>Now click on the Layout options and a left sidebar will appear. From the sidebar, you can change the layout of the template.</p>
+
+              <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/template/layout_settings_email_template.png" class="img-thumbnail"/>
+
+              
+              <div class="section-header">
+                  <h1 id="sms-template">SMS template</h1>
+                  
+               </div>
+               <hr>
+              
+              <p>To create a template for SMS, click on the SMS option in the template.</p>
+
+              <p>an image will be here</p>
+
+              <p>And instantly, a page called SMS template with a button called New template will appear. Click on the New template button.</p>
+
+              <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/template/sms_template.png" class="img-thumbnail"/>
+
+              <p>And Instantly,  a modal called create template will appear.</p>
+
+              <p>You have to provide a template name in the template name field. Then you have to write content in the content field. You can also include the first name or the last name in the content.</p>
+
+              <p>Then click on the save button to save the template. </p>
+
+              <img src="assets/broadcasting_screenshots/SMS_email_broadcasting/template/SMS_template_modal.png" class="img-thumbnail"/>
+
+
+
+
+    
+
+  <!-- General JS Scripts -->
+  <script src="../assets/modules/jquery.min.js"></script>
+  <script src="../assets/modules/popper.js"></script>
+  <script src="../assets/modules/tooltip.js"></script>
+  <script src="../assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="../assets/modules/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.8/marked.min.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="../assets/modules/prism/prism.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  <script src="../assets/modules/sticky-kit.js"></script>
+  <script src="../assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+  <!-- Template JS File -->
+  <script src="https://unpkg.com/navigo@6.0.2/lib/navigo.min.js"></script>
+</body>
+</html>

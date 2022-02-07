@@ -1,0 +1,14 @@
+body
+{
+    overflow:hidden !important;
+    height:100% !important;
+    background: transparent !important;
+}
+
+.preloading_body i{font-size:40px;display: table-cell; vertical-align: middle;padding:30px 0;}
+
+.preloading_body {
+	height: 100%;width:100%;display: table;
+}
+#theme_iframe_container{background: transparent !important;}
+#theme_iframe_container .card{background: transparent !important;}

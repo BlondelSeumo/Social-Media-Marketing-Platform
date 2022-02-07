@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>ChatPion Documentation</title>
+  <link rel="shortcut icon" href="../assets/img/favicon.png">
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="../assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="../assets/modules/prism/prism.css">
+  <link rel="stylesheet" href="../assets/modules/chocolat/dist/css/chocolat.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <a href="#" class="nav-link sidebar-gone-show h-auto" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
+        <a href="../" class="navbar-brand text-center">
+          <img src="../assets/img/logo.png" style="max-width: 150px;">
+        </a>
+        <div class="nav-collapse mr-lg-auto mr-0 ml-auto m-lg-0">
+          <!-- <a class="sidebar-gone-show nav-collapse-toggle sidebar-gone-show nav-link" href="#">
+            <i class="fas fa-ellipsis-v"></i>
+          </a> -->
+        </div>
+        <ul class="navbar-nav d-lg-flex align-items-center justify-content-end w-25">
+          <li class="ml-lg-2"><a href="../api/doc" target="_BLANK" class="nav-link btn btn-outline-primary text-primary btn-icon icon-left"><i class="fas fa-plug"></i> API Doc</a></li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="../"><img src="../assets/img/favicon.png"></a>
+          </div>
+         <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li>Integration
+              <ul>
+                <li><a href="import-accounts.html">Facebook & Instagarm</a></li>
+                <li><a href="api-channels.html">API Channels</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul> COMMENT FEATURE
+                <li><a href="comment-growth-tools.html">Comment growth tools</a></li>
+                
+              </ul>
+            </li>
+             <li>
+              <ul>MESSENGER TOOLS
+                <li><a href="subscriber-manager.html">Subscriber Manager</a></li>
+                <li><a href="livechat.html">Live Chat</a></li>
+                <li><a href="flow-builder.html">Bot Manager</a></li>
+                <li><a href="broadcasting.html">Broadcasting</a></li>
+              </ul>
+            </li>
+            
+            
+            
+            <li>Ecommerce 
+              <ul>
+                <li><a href="ecommerce.html" class="active">Ecommerce Store</a></li>
+                
+              </ul>
+            </li>
+            <li>Posting Feature
+              <ul>
+                <li><a href="social-posting.html">Social Posting</a></li>
+                
+              </ul>
+            </li>
+            
+          </ul>                           
+        <!-- Menu -->
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content" style="min-height: 352px;">
+         <section class="section">
+            <div class="section-body">
+
+              <ul id="submenu">
+                 
+                                <li><a  href="#introduction">Introduction</a></li>
+                                <li><a  href="#Create_new_edit_existing">Create new and edit existing store</a></li>
+                                <li><a  href="#Generate_virtual_restaurant">Generate virtual restaurant</a></li>
+                                <li><a  href="#Add_category">Add category</a></li>
+                                <li><a  href="#Add_Attribute">Add Attribute</a></li>
+                                <li><a  href="#Add_products">Add products to the store</a></li>
+                                <li><a  href="#Checkout">Checkout settings</a></li>
+                                <li><a  href="#Delivery_points">Delivery points</a></li>
+                                <li><a  href="#Coupon">Coupon</a></li>
+
+                                <li><a  href="#Orders">Orders</a></li>
+                                <li><a  href="#reminder_confirmation">Confirmation and Reminder</a></li>
+                                <li><a  href="#QR_menu">QR menu</a></li>
+                                <li><a  href="#Visit_store">Visit store</a></li>
+                                <li><a  href="#Copy_url">Copy url</a></li>
+                 
+                </ul>
+
+               <div class="section-header">
+                  <h1 id="introduction">eCommerce</h1>
+               </div>
+               <hr>
+               <p><a name="section-1"></a></p>
+               
+
+               <p> <span class="text-primary font-weight-bold">Ecommerce store</span> is a special feature of ChatPion, the world’s best marketing software. With the feature, you can generate a virtual restaurant that will be opened both inside the Facebook Messenger and on the browser.</p>
+                                    
+                  <p>Just after creating your virtual restaurant, it will provide you two QR codes-- Messenger QR code and browser QR code. You just have to supply the QR codes to your customers. Just as your customers scan the Messenger QR code, straightway, your virtual shop opens inside your messenger. Likewise, just as they scan the browser QR code, your virtual shop will open on their browsers. Because of the QR codes, your customers will get rid of finding your Facebook page, sending messages, and entering your virtual restaurant’s link on their browsers.</p>
+                  <p>
+                  Besides, the virtual restaurant will provide two urls under the QR codes-- Messenger url and browser url. Just like QR codes, Messenger url will be open inside the messenger and browser url will be open on the browser.</p>
+
+               
+               
+               <div class="section-header">
+                  <h1 id="Generate_virtual_restaurant">Generate virtual restaurant</h1>
+                  
+               </div>
+               <hr>
+               
+               <p>First, you have to create a store for your virtual restaurant and add food items to the store. Then you have to make some settings so that your virtual restaurant works properly.
+                                  <br><br>
+
+                To create a store, go to the <span class="text-primary"> left panel of the ChatPion Dashboard > click on the 'Ecommerce store' </span> menu.
+                <br><br>
+
+                </p>
+
+               <img class="img-thumbnail" src="assets/images/XeroChat_Messenger_Bot interface.png"/>
+
+               <p>Just as you click on the <span class="badge badge-success">Ecommerce store</span> the interface of the Ecommerce store will appear with a <span class="badge badge-success">Create store</span> button at the top of the page. And other existing stores listed will appear under the ‘Store’ menu on the left side. After selecting any existing store, you can add more products to the specific store and edit settings.
+                </p>
+
+               <div class="section-header">
+                  <h1 id="Create_new_edit_existing">Create new and edit existing store</h1>
+                  
+               </div>
+               <hr>
+
+               <p>
+                Well, to create a new store, you have to click on the <span class="badge badge-success">Create store</span> button first. Instantly, a form will appear. You have to fill out the form-- selecting a Facebook Page, providing some initial information about the virtual restaurant, writing down the Terms of service and refund policy, and uploading the logo and favicon.
+                <br> <br>
+
+                In the form, there is a special box called local that needs a bit of explanation. Just as you click on the box, a drop-down menu of some languages will appear-- you can select any language. Your virtual restaurant will open in the language that you select. For example, if you select English, your virtual restaurant will appear to your customers in English.</p>
+
+                                <p><img class="img-thumbnail" src="assets/images/create store and edit.png"/></p>
+
+                <p>
+                                  There are two boxes called, ‘Facebook Pixel Id’ and ‘Google Analytics Id’ that also need a bit of explanation.
+                                  <br> <br>
+
+                                  Facebook Pixel Id is a piece of code you can place inside the source code of your website. The code automatically can collect and store data of your website visitors. Because of Facebook Pixel code, you can run Facebook Ads for targeted audiences who have visited your website before using the data. Please visit the <a href="https://www.facebook.com/business/help/952192354843755?id=1205376682832142" class="stretched-link">link</a> to see how to create Facebook Pixel Id.
+                                  <br> <br>
+
+                                  Google Analytics Id also works like Facebook Pixel Id to re-target your website visitors in the Google ads. Please visit the <a href="https://support.google.com/analytics/answer/1009694?hl=en" class="stretched-link">link</a> to learn how to create Google Analytic Id.
+                                  <br> <br>
+
+
+                                  Anyway, after filling out the form, click on the <span class="txt text-primary">Create store</span> button at the bottom of the form. If you fill up every compulsory field properly, a pop-up box will appear with a successful message.
+                                </p>
+
+
+                <div class="section-header">
+                  <h1 id="Add_category">Add Category</h1>
+                  
+               </div>
+               <hr>
+
+               <p>
+                                  Now you have to add some categories to your store so that you can add food items in different categories. The category is an important thing to arrange your food items. If your food items are organized properly, your clients can look over different food items and choose from them easily.
+
+                                  To add a category, click on the option called ‘Categories’ in the ‘Action menu’ at the right side of the Dashboard. Instantly, a page will appear with the <span class="badge badge-success">Add category</span> button at the top-right of the page.
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/add category.png"/></p>
+
+                                <p>
+                                  <br>
+                                  <span class="text-primary">Click on Add Category > write down the category name > Click on the ‘Save’ button. </span>
+
+
+                                  <br> <br>
+
+                                  Now click on the <span class="badge badge-primary">Add Category</span>  button and straightaway, a pop-up form will appear. You have to fill out the form— writing down a Category name. Then click on the <span class="badge badge-success">Save</span> button. Now this category has been added to your store.
+                                  </p>
+
+                                  <p><img class="img-thumbnail" src="assets/images/category box.png"/></p>
+                                  <p>
+                                    Of course, you can add as many categories as you want. And all your categories with <span class="badge badge-success">edit</span> and <span class="badge badge-success">Delete</span> buttons will be listed on ‘Categories’ page. By clicking on the <span class="badge badge-success">edit</span> edit and <span class="badge badge-success">delete</span> delete button, you can edit and delete the category. You can also see the status of the category-- whether a category is active or not.</p>
+
+                  <div class="section-header">
+                  <h1 id="Add_Attribute">Add Attribute</h1>
+                  
+               </div>
+               <hr>
+
+                <p>
+                                  To add the attribute, click on <span class="text-primary">Attributes > Add Attribute > write down Attribute Name > provide Attribute Value > Enable or Disable two radio buttons as you see fit >  Save.</span>
+                                  <br> <br>
+
+                                  Just as you click on the Attributes option in the Action menu at the left side of the dashboard, a page called ‘Attributes’ will appear with the ‘Add attribute’ button at the top-right of the page.
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/Add attribute.png"/></p>
+                                <p>
+                                  Now click on the <span class="badge badge-success">Add attribute</span>  button and a pop-up box will appear. In the box, you have to write down the name of the attribute and give attribute values in comma-separated. Then enable or disable three buttons called ‘Multi select’, ‘Optional’, and ‘Active’ as you see fit for the attribute.
+                                  <br> <br>
+
+                                  By the <span class="badge badge-success">Active</span> button, you can make the attribute Active or Inactive. The functionalities  of the other two buttons are a bit complicated to understand. If you enable the <span class="badge badge-success">Multi-select</span>  button, your clients can select the multiple attribute values of the same food item. If you add an attribute called  ‘Pizza toppings’ and add three values like ‘Extra Chilly’, ‘Extra spice’ and ‘Extra cheese’ and turn on a multi-select button, your customers can order a Pizza that has Extra Chilly, Extra spice, and Extra cheese at the same time.
+                                  <br> <br>
+
+                                  On the other hand, if you disable the <span class="badge badge-success">Multi-select</span> button, a client can only one attribute value for a specific food item. For example, if you disable ‘Multi-select’ for an attribute called ‘pizza toppings’ with three values called ‘Extra Chilly’, ‘Extra spice’, and ‘Extra cheese’  a client can only order a pizza either with extra chilly, extra spice or extra cheese.
+
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/attribute_box.png"/></p>
+                                <p>
+                                  As for the multi-select button, you have to keep in mind that you can’t enable the multi-select button for the attributes like ‘Size’ because a food item can’t be small, medium, and large at the same time-- it is not logically possible. But you can enable the multi-select button for the attributes like toppings because toppings can have Extra Chilly, Extra Spice, and Extra Cheese at the same time. Moreover, for attributes like pizza toppings enabling the multi-select button is useful because then customers can order a pizza that has extra Chilly, extra spice, and extra cheese in the toppings at the same time.
+                                  <br> <br>
+
+                                  On the other hand, if you turn on the <span class="badge badge-success">Optional</span>  button, your clients can avoid selecting attributes for a specific food item. Then the clients can order specific food items that have no additional ingredients. For example, if you enable the <span class="badge badge-success">Optional</span> button for ‘Pizza toppings’, a client can order a pizza with toppings that has no extra ingredients.
+                                  <br> <br>
+
+                                  But if you disable the ‘Optional’ button, the clients must choose an attribute. Otherwise, he/she can’t order the food item. Disabling the ‘Optional’ button is required for attributes like size, for a client must select a value for size whether it is small, medium or large. Otherwise, they can’t order a food item.
+                                  <br> <br>
+
+                                  Then comes the ‘Active’ button. If you turn on the active button, the attribute will appear when you add a food item to the store and otherwise not.
+                                  <br> <br>
+
+                                  Like the Category option, after you have added one or more attributes, the attributes will appear on the page. Of course, you can add as many attributes as you want. Well, from the page, you can edit and delete any attribute you want and can see the status of the attributes.
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/edit and delete attribute.png"/></p>
+
+                  <div class="section-header">
+                  <h1 id="Add_products">Add products to the store</h1>
+                  
+               </div>
+               <hr>
+
+               <p>
+                   After you have added categories and attributes, you add food items that could be included in categories and attached to the attributes.
+                                  <br><br>
+
+                  Click on the <span class="text-primary">Products > Add product > Fill up the form > click Save button. </span>
+                                    <br><br>
+                                  To add products, click on the ‘Products’ option in the ‘Action’ menu on the left side of the dashboard. Straightway, the Products page will appear with the <span class="badge badge-success">Add product</span> ‘Add product’ button at the top-right position. Now click on the button and a form will appear. You have to fill out the form to add the product-- providing some initial information about the products, selecting categories and attributes. Moreover, you have to upload thumbnails and featured images of the products-- you can upload one more image of the products in the featured image option. Filling-out the form, you have to click on the <span class="badge badge-success">Save</span>  button. Instantly, your food item will be added to your virtual shop.
+                                    </p>
+                                  <p><img class="img-thumbnail" src="assets/images/filling out the form of adding products.png"/></p>
+                                  <p>
+
+                                  Likewise, you can add thousands of food items. And all the food items will be shown on the page. And you can edit, delete and clone the food items and see the product page of the product by the action button. Also, you can see the price and status of whether the product is active or inactive.
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/Page of products.png"/></p>
+
+                  <div class="section-header">
+                  <h1 id="Checkout">Checkout settings</h1>
+                  
+               </div>
+               <hr>
+
+                <p>
+                                  Now you have to make a checkout setting for your virtual restaurant. ChatPion’s ‘Ecommerce store’ has integrated some online payment methods-- PayPal, Stripe, Mollie, Razorpay, Paystack so that your customers can pay via the payment methods easily. Besides, it supports manual payment and cash on delivery systems. <br> <br>
+
+                                  Now you can make a specific checkout setting for a specific store.
+
+                                  <span class="text-primary">Action > Checkout settings</span>
+
+                                  To make a checkout setting, click on the ‘Checkout settings’ in the ‘Action’ menu at the left side of the store dashboard. Instantly, appear a form that you have to fill up. First, you have to provide your account information for any or some of the online payment methods that you want to enable. Then you have to write down the instruction for manual payment in the text area called ‘Manual Payment Instruction’.<br> <br>
+
+                                  After that, you will get a checkout payment option. From here, you can enable any online payment methods and manual checkout for your store. And ‘Cash on Delivery’ is enabled by default.<br> <br>
+
+                                  After that, you will get the ‘Currency and Label’ option. Here, you have to select the currency of online payment methods, the currency through which the clients will give the payment. For example, if you select USD(Dollar) for PayPal and Stripe, your customers have to pay in Dollars via PayPal and Stripe. Then you will see, in a row,  three radio buttons called <span class="badge badge-success">Right alignment</span> , <span class="badge badge-success">Two decimal</span> , and <span class="badge badge-success">Display comma</span>. By placing your mouse cursor on the tooltips, you can see the functionality of these buttons. Then you have to put labels for the <span class="badge badge-success"></span>‘Buy Now’ button and <span class="badge badge-success">Store Pickup</span> title.<br> <br>
+
+                                  Then came the Tax and Delivery charge option. Here, you have to provide the amount of Tax in percentage and delivery charge.<br> <br></p>
+
+                                  <p><img class="img-thumbnail" src="assets/images/screenshots of checkout setting.png"/></p>
+
+                                  <p>Then comes the address preference area. At first, you see a radio button called <span class="badge badge-success">Store Pickup</span>. If you enable the button, the clients can give food orders via your virtual restaurant and receive food items sitting at the table of your real restaurant. But if you disable the <span class="badge badge-success">Store Pickup</span>  button, you have to give a delivery address where the food will be delivered. Next to the <span class="badge badge-success">Store Pickup</span>  button, you will see a button called <span class="badge badge-success">Delivery note</span>  . If you enable the ‘Delivery note’, button, your clients will get a text area where they can write a delivery note. In the delivery note, they can tell you how they want the delivery. For example, he can tell that they want the delivery person to wear a mask while delivering the food.<br> <br>
+
+                                  Then come some radio buttons, by disabling and enabling them, you can determine which piece of information your clients have to provide while giving their delivery addresses. The importance of the buttons is that most of the time, you don’t need the country, state, city, and country zip, because you already know the area of your clients. So you don’t need to bother your valued customers to provide his country, state, city and country zip you know beforehand. On the other hand, if you are uncertain of your customers’ area, enable country, state, city, and country zip so that they have to provide them. <br> <br>
+
+                                  After filling out the checkout setting form, click on the <span class="badge badge-success">Save</span>  button and your checkout setting is set.
+                                </p>
+
+                                 <div class="section-header">
+                  <h1 id="Delivery_points">Delivery Points</h1>
+                  
+               </div>
+               <hr>
+
+               <p>
+                                  Since you have enabled the store pickup option, you have to set the delivery points. To do this, you have to add point names and point details. As for a restaurant, delivery points would be table and point detail would be table number.
+
+                                  To add a delivery point, click on the ‘Delivery points’ on the left side of the dashboard. Instantly, a page will appear with the <span class="badge badge-success">Add point</span>  button at top-right position. Click on the button and a pop-up form will appear. Then you have to fill-out the form by providing point(Table) and point details (For example, Table 1).
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/Delivery_point_box.png"/></p>
+
+
+                                 <div class="section-header">
+                  <h1 id="Coupon">Coupon</h1>
+                  
+               </div>
+               <hr>
+
+               <p>
+                                  If you want to give discounts on some specific products, coupons are required.
+                                  <br> <br>
+
+                                  Well, to make coupons, click on the coupons option in the ‘Action’ menu at the left side of the Dashboard. And instantly, appear a form you have to fill out to create a coupon.
+                                  At the products field, you have to specify the products the coupon will be applicable.
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/coupon code.png"/></p>
+                                <p>
+                                  In ChatPion's Ecommerce store, you can make three types of coupons, such as Percent, Fixed cart, and fixed products. Now you have to select any of the three types of coupon code. Before selecting, you have to understand the functionality of each type of coupon. <br><br>
+
+                                  Let's explain them: <br><br>
+
+                                  Percent– Percent coupon type is applicable for selected products only. For example, if the cart contains three (3) t-shirts @ $20 each = $60, a coupon for 10% off applies a discount of $6.<br><br>
+
+                                  Fixed cart –A fixed total discount for the entire cart. For example, if the cart contains three (3) t-shirts @ $20 each = $60, a coupon for $10 off gives a discount of $10. This coupon type will be applicable for all the products you have added to cart whether you have selected the products or not.<br><br>
+
+                                  Fixed product – A fixed total discount for selected products only. Customers receive a set amount of discount per item. For example, three (3) t-shirts @ $20 each with a coupon for $10 off applies a discount of $30.<br><br>
+                                  Then you have to fill out the following boxes: <br><br>
+
+                                  Coupon Code- Now give code for the coupon. Your customers will use the code to get discounts on the products the coupon is applicable to. <br><br>
+
+                                  Coupon amount- Then you have to provide the amount for the coupon. Depending on the discount type you choose, the coupon amount will be a Fixed value or percentage. Enter the amount without a currency unit or a percent sign, which will be added automatically based on the discount type you choose e.g., Enter ’10’ for £10 or 10%.<br><br>
+
+                                  Coupon expiry date– Date the coupon should expire and can no longer be used.<br><br>
+                                  Max usage limit- You have to specify the number of times the coupon could be used before reaching the expiration date. <br><br>
+
+
+                                  Coupon deactivate- By disabling the <span class="badge badge-success">status</span>  button, you deactivate the coupon anytime.<br><br>
+
+                                  Free shipping – If you enable Free shipping, the shipping cost will be removed when the coupon is used.<br><br>
+                                </p>
+
+                                <div class="section-header">
+                  <h1 id="Orders">Orders</h1>
+                  
+               </div>
+               <hr>
+
+               <p>
+                                   You can see the details of the orders given by your clients on a page called <span class="text-primary">Orders</span>. Most importantly, using a thermal printer, you can print the invoices for the orders easily.
+
+                                   To see the details of orders and print the invoices, click ‘Orders’, in the ‘Action Menu’ at the left side of the dashboard. Without delay, all the orders listed will appear on the page. Move the bottom scroll bar to see the whole details of the orders.
+
+                                   From the page, you can change the status of the orders. Click on the ‘Status’ field beside the specific order and a drop-down menu with ‘Pending’, ‘Approved’, ‘Rejected’, ‘Shipped’, ‘Delivered’, and ‘Completed’ will appear. Now you can select one of them to see the status of the order later.
+
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/orders.png"/></p>
+
+                                <p>
+                                    To print the invoice, click on the invoice field. Instantly, the order invoice will appear ready to be printed. At the top of the page, you will see three options — Large A4, Thermal 88mm, Thermal 57mm. Click on one of them and the print option will appear. After the invoice printed, give the copy to your cook.
+
+                                    By clicking on the button called <span class="badge badge-success">Choose date</span>, you can see only the orders given at a specific time such as the last month. Also, you can download the list of orders in a CSV file by clicking on the <span class="badge badge-success">Download orders</span> button.
+
+                                </p>
+
+                      <div class="section-header">
+                      <h1 id="reminder_confirmation">Confirmation and Reminder</h1>
+                  
+               </div>
+               <hr>
+
+               <p>
+                                  If you make a setting, Confirmation and Reminder can send abandoned cart recovery reminders to the clients if they leave your virtual restaurant after adding food items to the cart. It is a very important feature because it can recover lost sales by bringing back the potential customers to your virtual restaurant. As well, the feature can send confirmation messages just as they finish purchasing so that the customers could be confirmed about their purchase.<br><br>
+
+                                  To make a setting, click on the ‘Confirmation and Reminder’ option in the left menu. Instantly, appear a form you have to fill-out. At the top, you will see three options-- Messenger, Sms, and Email. Select Messenger to send Confirmation message and Abandoned Cart Recovery Reminder via Messenger and select Sms and Email respectively.<br><br>
+
+
+                                  Well, if you want to set the confirmation message for messenger, first, select messenger at the top of the form, and next, select ‘checkout messenger’ at the bottom-right of the form. After that, you have to write the content in the ‘messenger content’ box. And the <span class="badge badge-success">My Order</span>  button, the order page link embedded, will be automatically added to the confirmation message. That is, your clients will get the message along with the ‘My Order’ button. And clicking on the button, the client can see the order history. Of course, you can change the label of my order button.
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/confirmation messege.png"/></p>
+                                <p>
+                                  Likewise, you can set confirmation messages for Sms and Email.<br><br>
+
+                                  On the other hand, ChatPion’s Ecommerce store can send three abandoned cart reminders successively within one hour to 24 hours. And you can set each abandoned cart reminder differently. Like confirmation messages, to set abandoned cart reminders for messenger, first, select messenger at the top then select any of the messenger reminders. Then click under it and a drop-down menu will appear. From the drop-down menu, you can select the hour (from 1 hour to 24 hours) you want to send the reminder at. Of course, you can stop the reminder by selecting the ‘do not send’ option from the drop-down menu. <br><br>
+
+                                  You can edit or rewrite the content in the ‘Messenger content’ box. <br><br>
+
+                                   The product link is embedded in a button called the <span class="badge badge-success">View Details</span> , the product link embedded and the ‘Checkout’ button with the checkout page embedded would automatically be added to the reminder. Of course, you can change the labels of the two buttons. By clicking on the <span class="badge badge-success">View Details</span> button, the client can see all the items added to the cart. As well, by clicking on the <span class="badge badge-success">Checkout</span> button’, the clients directly enter the checkout page. You can also insert a coupon code, while editing the content, in the message box to give discounts on the products. <br><br>
+
+                                  If a client leaves your virtual restaurant and returns and finishes purchasing before an abandoned cart recovery is sent, the abandoned cart recovery reminder will be stopped automatically, and instead, a confirmation message will be sent. Likewise, getting an abandoned cart recovery reminder, if a client returns to your virtual restaurant and finishes purchasing, other recovery reminders in a queue will be stopped, and instead, a confirmation message will be sent.
+
+
+                                </p>
+                                <p>
+                                  <strong>Reminder Report:</strong> <br>
+                                  You can see the Abandoned Cart Reminder report by clicking on the
+                                  <span class="text-primary">Reminder report</span>
+                                  at the left panel of the Dashboard.
+
+                                </p>
+
+                                <p><img class="img-thumbnail" src="assets/images/reminder report.png"/></p>
+
+
+                                  <div class="section-header">
+                      <h1 id="reminder_confirmation">Confirmation and Reminder</h1>
+                  
+               </div>
+               <hr>
+
+                <p>
+                                  Once you have finished creating your virtual restaurant, you need the QR codes to  provide them to your clients-- scanning the QR codes, your clients can easily enter your restaurant not only via Facebook Messenger but also on the browsers. <br><br>
+
+                                  To get the QR codes, click on the QR menu and straightway, the ‘QR menu’ page will appear. On the page, you will see two QR codes-- one for messenger and the other for browsers. Clicking on the <span class="badge badge-success">Download</span> button, you can easily download the QR codes.
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/QR codes.png"/></p>
+                                <p>
+                                  Now print the QR code and attach it to any suitable place, for example, on the wall, and on the table so that your clients can easily notice and scan the QR code to enter your virtual store, meaning to get the virtual menu. Once the QR code is scanned, the virtual menu will appear on your mobile screen inside messenger or on browsers. From the virtual menu, your clients can choose foods and give orders while sitting at the table of your restaurant without talking to your waiter.<br><br>
+
+                                  In the COVID-19 pandemic, the QR code menu becomes essential because by using it, people needn’t come in direct contact with any person while eating out. <br><br>
+
+                                  Under the messenger QR code, you can write a welcome message for your clients. After writing the message, click on the <span class="badge badge-success">Save</span>  button. Then your QR code will hold the message you have written.
+                                </p>
+
+                                <div class="section-header">
+                      <h1 id="Visit_store">Visit store</h1>
+                  
+               </div>
+               <hr>
+
+               <p>
+                                  To check how your virtual restaurant is set, click on the ‘Visit store’ option in the ‘Action Menu’ and you will redirect to your virtual restaurant in a new tab.
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/visitStore.png"/></p>
+
+
+                                 <div class="section-header">
+                      <h1 id="Copy_url">Copy url</h1>
+                  
+               </div>
+               <hr>
+
+               <p>
+                                  Once you finish creating your virtual restaurant, the ‘Ecommerce store’ has made different urls— Store url, Order url, Product url, and Legal url-- for your virtual restaurant. <br><br>
+
+                                  You need the urls if you want to integrate your virtual restaurant directly to Facebook page messenger. And if so, your clients have to send messages to the Facebook page to get access to your virtual shop.<br><br>
+
+                                  To get the urls, click on the ‘Copy url’ option in the ‘Action menu’ at the left panel of the dashboard. Instantly, the copy url page will appear with four types of urls. You need the two types of url—Store url and Products urls-- to integrate the restaurant to the Facebook page.<br><br>
+
+                                </p>
+                                <p><img class="img-thumbnail" src="assets/images/copy_url.png"/></p>
+                                <p>
+                                  Now copy the store url and product urls and go to the messenger bot of the ChatPion. <br><br>
+
+                                  Click on the Messenger bot > bot settings > action> add bot reply> fill out the bot reply settings form. <br><br>
+
+
+                                  At the top of the messenger bot feature, you will see ‘bot settings’. Click on the <span class="badge badge-success">action</span> button, instantly a page called ‘bot settings’ will appear. Click on <span class="badge badge-success">Add bot reply</span> at the top-right position of the page and appear a form you have to fill up to integrate your virtual restaurant with Messenger bot.<br><br>
+
+                                  At first, you have to provide a bot name and keywords in comma-separated. Based on the keywords, the bot will reply. Now, you have to select the reply type. To integrate your shop with Messenger, you have to provide urls copied from your virtual restaurant. Therefore, you have to select any of the reply types that come with button types that support urls. Anyway, select <span class="badge badge-success">text with</span> button’ reply type and any of the <span class="badge badge-success">web url</span>  and webview buttons. Select the web view full and a box called web url will appear— past the url here. If you provide a store url, the entire shop will appear inside the Facebook messenger, whereas for the product url, the specific product will appear. Clicking ‘Add more button’ and ‘Add more reply’ button, you can add more buttons and replies.
+                                    </p>
+                                  <p><img class="img-thumbnail" src="assets/images/messengerBot.png"/></p>
+                                  <p>
+                                  Moreover, by the postback button, you can provide products in categories. Eventually, click on the Submit button to save the bot settings for your virtual restaurant. Now the Messenger bot will handle your virtual restaurant inside the messenger. That is, your clients can enter your virtual restaurant by sending messages.
+                                </p>
+
+
+
+
+
+
+
+                                                          
+               
+               
+               
+
+
+
+               
+
+
+              
+
+
+
+
+
+
+              
+
+
+
+
+
+
+
+              
+            
+
+
+
+               
+
+
+               
+
+
+               
+
+               
+
+               
+
+
+
+
+
+
+
+              
+
+
+               
+
+               
+
+
+
+
+
+
+
+
+
+               
+               
+               <!-- <div class="d-flex justify-content-lg-end">
+                <a href="#license" class="btn btn-white btn-icon icon-right btn-lg">Next: License <i class="fas fa-chevron-right"></i></a>
+               </div>
+
+
+
+
+               <div class="section-header">
+                  <h1 id="license">License</h1>
+                  
+               </div>
+               <hr>
+               <p><a name="license"></a></p>
+               <h2 id="license-1">License</h2>
+               <p>MIT License</p>
+               <p>Copyright (C) 2019 Muhamad Nauval Azhar</p>
+               <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+               <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+               <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+               <div class="d-flex justify-content-lg-end"><a href="#/en/2.3/upgrade-guides" class="btn btn-white btn-icon icon-right btn-lg">Next: Upgrade Guides <i class="fas fa-chevron-right"></i></a></div>
+
+
+
+                <div class="section-header">
+                   <h1 id="upgrade-guides">Upgrade Guides</h1>
+                   <div class="ml-auto"><a href="#/en/2.3/starter/third-party-libraries" class="btn btn-white btn-icon icon-right btn-lg">Skip to Third-party Libraries <i class="fas fa-chevron-right"></i></a></div>
+                </div>
+                <hr>
+                <p><a name="upgrade-guides"></a></p>
+                <h2 id="upgrade-guides-1">Upgrade Guides</h2>
+                <p>To upgrade version 2.2 to version 2.3, you need to copy some files, and make some changes to the code structure. The following are some of the changes:</p>
+                <h2 id="welcome-yarn">Welcome Yarn</h2>
+                <p>Since version 2.3, we use Yarn for the package manager. Therefore, you need to install Yarn inside your machine. Yarn will easier for you to manage third-party libraries. You can see all the third-party libraries we use in the <code>package.json</code> file. Get started with <a href="https://yarnpkg.com/en/docs/getting-started">Yarn</a>. After installing Yarn on your machine, run the following command:</p>
+                <pre class="language-bash code-toolbar"><code class=" language-bash">yarn stisla-start
+             </code><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+                <h2 id="welcome-gulp">Welcome Gulp</h2>
+                <p>Besides Yarn, we also added Gulp to make it easier in the development phase. You can <a href="https://gulpjs.com/docs/en/getting-started/quick-start">learn Gulp</a> on the official site, we add the following commands:</p>
+                <pre class="language-bash code-toolbar"><code class=" language-bash"><span class="token comment"># Creating directories</span>
+             gulp folder
+
+             <span class="token comment"># Minify images</span>
+             gulp image
+
+             <span class="token comment"># Compiling SCSS</span>
+             gulp scss
+
+             <span class="token comment"># Compiling Nunjucks</span>
+             gulp html
+
+             <span class="token comment"># Compiling all for distribution</span>
+             gulp dist
+
+             <span class="token comment"># Start development</span>
+             yarn dev <span class="token comment"># or `gulp`</span>
+             </code><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+                <h2 id="welcome-nunjucks">Welcome Nunjucks</h2>
+                <p>Since version 2.3, we started using template engine to make it easy to develop. All HTML files in the <code>pages/</code> folder are compiled from the template engine we use. We use <a href="https://github.com/mozilla/nunjucks">Nunjucks</a> as a template engine, because the syntax is readable and easy to learn.</p>
+                <div class="alert alert-danger">
+                   Beware! If you recompile the template engine, you will lose all the changes you have made to all files in the <code>pages/</code> folder
+                </div>
+                <h2 id="restructuring-directories">Restructuring Directories</h2>
+                <p>In version 2.2, we have only 2 directories, <code>dist</code> and <code>sources</code>. For version 2.3, we changed the directory structure to make it easier for development. </p>
+                <pre class="language-html code-toolbar"><code class=" language-html">- assets
+               - css
+               - js
+               - img
+               - fonts
+             - pages
+             - sources
+               - ai
+               - scss
+               - pages
+             </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+                <p>The above is a new directory structure. All source codes such as <code>scss</code>, <code>nunjucks</code> etc. are placed in the <code>sources</code> folder. Meanwhile, outside it is a folder for distribution.</p>
+                <h2 id="all-common-dependencies-use-cdn">All Common Dependencies Use CDN</h2>
+                <p>All common dependencies, such as Bootstrap, Font Awesome, jQuery, Popper, NiceScroll, Moment.js and Google Fonts are using CDN. With this, you can save space and be faster.</p>
+                <pre class="language-html code-toolbar"><code class=" language-html">  <span class="token comment">&lt;!-- General CSS Files --&gt;</span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://use.fontawesome.com/releases/v5.7.2/css/all.css<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+               <span class="token comment">&lt;!-- General JS Scripts --&gt;</span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://code.jquery.com/jquery-3.3.1.min.js<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js<span class="token punctuation">"</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>anonymous<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+               <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+             </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+                <p>Even so, you can make it locally, we have added it to the <code>package.json</code> file.</p>
+                <h2 id="all-images-in-css-are-converted-to-base64">All Images in CSS are Converted to Base64</h2>
+                <p>All images needed in CSS, we convert to Base64 code, this will resolve the <code>path</code> problem (especially on Rails).</p>
+                <h2 id="added-several-variables">Added Several Variables</h2>
+                <p>In version 2.3, we added several new variables, including:</p>
+                <pre class="language-scss code-toolbar"><code class=" language-scss"><span class="token property"><span class="token variable">$colors</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+               <span class="token number">...</span>
+               <span class="token comment">// Form Control</span>
+               <span class="token property">formcontrol_normal_background</span><span class="token punctuation">:</span>    <span class="token hexcode">#fdfdff</span>,
+               <span class="token property">formcontrol_normal_border</span><span class="token punctuation">:</span>        <span class="token hexcode">#e4e6fc</span>,
+               <span class="token property">formcontrol_focus_background</span><span class="token punctuation">:</span>     <span class="token hexcode">#fefeff</span>,
+               <span class="token property">formcontrol_focus_border</span><span class="token punctuation">:</span>         <span class="token hexcode">#95a0f4</span>,
+
+               <span class="token comment">// Utilities</span>
+               <span class="token property">section_title_line</span><span class="token punctuation">:</span> <span class="token hexcode">#6777ef</span>
+             <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+             <span class="token property"><span class="token variable">$font_family</span></span><span class="token punctuation">:</span>   <span class="token string">'Nunito'</span>, <span class="token string">'Segoe UI'</span>, arial<span class="token punctuation">;</span>
+             <span class="token property"><span class="token variable">$font_weight</span></span><span class="token punctuation">:</span>   <span class="token number">400</span><span class="token punctuation">;</span>
+             <span class="token property"><span class="token variable">$font_size</span></span><span class="token punctuation">:</span>     <span class="token number">14</span>px<span class="token punctuation">;</span>
+             </code><div class="toolbar"><div class="toolbar-item"><span>Sass (Scss)</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+              <div class="d-flex justify-content-lg-end"><a href="#/en/2.3/starter/third-party-libraries" class="btn btn-white btn-icon icon-right btn-lg">Next: Third-party Libraries <i class="fas fa-chevron-right"></i></a></div>
+
+
+
+
+             <div class="section-header">
+                <h1 id="card">Card</h1>
+                <div class="ml-auto"><a href="#/en/2.3/javascript/introduction" class="btn btn-white btn-icon icon-right btn-lg">Skip to Introduction <i class="fas fa-chevron-right"></i></a></div>
+             </div>
+             <hr>
+             <p><a name="card"></a></p>
+             <h2 id="card-1">Card</h2>
+             <p>This template is Bootstrap 4 based, so we use the card to make the grouping in the layout.</p>
+             <p>We also changed a little style on this Bootstrap built-in card. To create a card use the following structure.</p>
+             <div class="preview">
+                <div class="card">
+                   <div class="card-header">
+                      <h4>Card title</h4>
+                   </div>
+                   <div class="card-body">
+                      Card content
+                   </div>
+                   <div class="card-footer">
+                      Card footer
+                   </div>
+                </div>
+             </div>
+             <pre class="language-html code-toolbar"><code class=" language-html"><span class="token comment">&lt;!-- card wrapper --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token comment">&lt;!-- card header --&gt;</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-header<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token comment">&lt;!-- card title --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>Card title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+              <span class="token comment">&lt;!-- card body --&gt;</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                Card content
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+              <span class="token comment">&lt;!-- card footer --&gt;</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-footer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                Card footer
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+             <p>If you want to create card without header you can add <code>.card-body</code> as a additional class of <code>.card</code></p>
+             <div class="preview">
+                <div class="card card-body">
+                   Card without Header
+                </div>
+             </div>
+             <p>You can also customize the border-top color of the card by adding additional classes as follows.</p>
+             <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card card-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            ...
+            ..
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+             <p>Here are the colors supported on the card.</p>
+             <div class="badge badge-primary">.card-primary</div>
+             <div class="badge badge-secondary">.card-secondary</div>
+             <div class="badge badge-success">.card-success</div>
+             <div class="badge badge-danger">.card-danger</div>
+             <div class="badge badge-warning">.card-warning</div>
+             <div class="badge badge-info">.card-info</div>
+             <div class="badge badge-dark">.card-dark</div>
+             <p><a name="card-collapsable"></a></p>
+             <h2 id="collapsable-card">Collapsable Card</h2>
+             <p>In addition, you can also create a collapsable card.</p>
+             <div class="preview">
+                <div class="card">
+                   <div class="card-header">
+                      <h4>Show/Hide</h4>
+                      <div class="card-header-action">
+                         <a data-collapse="#mycard-collapse" class="btn btn-icon btn-info" href="#"><i class="fas fa-minus"></i></a>
+                      </div>
+                   </div>
+                   <div class="collapse show" id="mycard-collapse" style="">
+                      <div class="card-body">
+                         You can show or hide this card.
+                      </div>
+                      <div class="card-footer">
+                         Card Footer
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-header<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>Show/Hide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-header-action<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">data-collapse</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#mycard-collapse<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-icon btn-info<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fas fa-minus<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>collapse show<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mycard-collapse<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                You can show or hide this card.
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-footer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                Card Footer
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+             <p><a name="card-dismissible"></a></p>
+             <h2 id="dismissible-card">Dismissible Card</h2>
+             <p>Lastly, you can also create a dismissible card.</p>
+             <div class="preview">
+                <div class="card" id="mycard-dimiss">
+                   <div class="card-header">
+                      <h4>Dismiss</h4>
+                      <div class="card-header-action">
+                         <a data-dismiss="#mycard-dimiss" class="btn btn-icon btn-danger" href="#"><i class="fas fa-times"></i></a>
+                      </div>
+                   </div>
+                   <div class="card-body">
+                      You can dimiss this card.
+                   </div>
+                   <div class="card-footer">
+                      Card Footer
+                   </div>
+                </div>
+             </div>
+             <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mycard-dimiss<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-header<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>Dismiss<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+              <span class="token comment">&lt;!-- card dismiss toggle --&gt;</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-header-action<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">data-dismiss</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/#mycard-dimiss<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-icon<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ion ion-close<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              You can dimiss this card.
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-footer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+              Card Footer
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+             <div class="alert alert-primary alert-has-icon mt-4">
+                <div class="alert-icon"><i class="far fa-lightbulb"></i></div>
+                <div class="alert-body">
+                   <div class="alert-title">More Information</div>
+                   <p>You can see other examples of card usage in the file <code>pages/bootstrap-card.html</code></p>
+                </div>
+             </div>
+             <div class="d-flex justify-content-lg-end"><a href="#/en/2.3/javascript/introduction" class="btn btn-white btn-icon icon-right btn-lg">Next: Introduction <i class="fas fa-chevron-right"></i></a></div>
+
+
+
+
+
+            <div class="section-header">
+               <h1 id="modal">Modal</h1>
+               <div class="ml-auto"><a href="#/en/2.3/javascript/chat" class="btn btn-white btn-icon icon-right btn-lg">Skip to Chat <i class="fas fa-chevron-right"></i></a></div>
+            </div>
+            <hr>
+            <p><a name="modal"></a></p>
+            <h2 id="modal-1">Modal</h2>
+            <p>As we know, to create a modal in Bootstrap requires the HTML structure to be a modal. It might be easy if we just make some modals. But, if we want to make a lot of modals would require a lot of HTML structure as well.</p>
+            <p>In this template we have provided a simple plugin to create a reusable modal. So you no longer need the HTML structure for every time you want to create a modal.</p>
+            <p>Here is a simple modal example.</p>
+            <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>toggle-modal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Launch Modal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+             <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#toggle-modal'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fireModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+               title<span class="token punctuation">:</span> <span class="token string">'My Modal'</span><span class="token punctuation">,</span>
+               content<span class="token punctuation">:</span> <span class="token string">'Hello!'</span>
+             <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+         </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+            <div class="preview">
+               <div class="text-center">
+                  <button class="btn btn-primary trigger--fire-modal-3" id="toggle-modal">Launch Modal</button>
+               </div>
+            </div>
+            <p>Also, you can add buttons on modal.</p>
+            <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>toggle-modal-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Launch Modal<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+           <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+             <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#toggle-modal-1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fireModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+               title<span class="token punctuation">:</span> <span class="token string">'My Modal'</span><span class="token punctuation">,</span>
+               body<span class="token punctuation">:</span> <span class="token string">'Hello, dude!'</span><span class="token punctuation">,</span>
+               buttons<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                 <span class="token punctuation">{</span>
+                   text<span class="token punctuation">:</span> <span class="token string">'Close'</span><span class="token punctuation">,</span>
+                   <span class="token keyword">class</span><span class="token punctuation">:</span> <span class="token string">'btn btn-secondary'</span><span class="token punctuation">,</span>
+                   handler<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>current_modal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                   $<span class="token punctuation">.</span><span class="token function">destroyModal</span><span class="token punctuation">(</span>current_modal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                   <span class="token punctuation">}</span>
+                 <span class="token punctuation">}</span>
+               <span class="token punctuation">]</span>
+             <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+         </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+            <div class="preview">
+               <div class="text-center">
+                  <button class="btn btn-primary trigger--fire-modal-4" id="toggle-modal-1">Launch Modal</button>
+               </div>
+            </div>
+            <p>In addition, you can also create a simple confirmation box by using this attribute on your button.</p>
+            <pre class="language-html code-toolbar"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-danger<span class="token punctuation">"</span></span> <span class="token attr-name">data-confirm</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Are you sure?|This action can<span class="token punctuation">'</span>t be undone<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Delete<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+         </code><div class="toolbar"><div class="toolbar-item"><span>HTML</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+            <div class="preview">
+               <div class="text-center">
+                  <button class="btn btn-danger" data-confirm="Are you sure?|This action can't be undone" data-confirm-yes="alert('Deleted');" data-confirm-no="alert('You\'re awesome');">Delete</button>
+               </div>
+            </div>
+            <p><a name="modal-usage"></a></p>
+            <h2 id="usage">Usage</h2>
+            <p><strong>Syntax</strong></p>
+            <pre class="language-javascript code-toolbar"><code class=" language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#toggle'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fireModal</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         </code><div class="toolbar"><div class="toolbar-item"><span>JavaScript</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+            <p><a name="modal-options"></a></p>
+            <h2 id="options">Options</h2>
+            <div class="table-responsive">
+               <table class="table table-striped">
+                  <tbody>
+                     <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Default</th>
+                        <th data-width="600">Description</th>
+                     </tr>
+                     <tr>
+                        <td>size</td>
+                        <td><code>string</code></td>
+                        <td><code>modal-md</code></td>
+                        <td>Bootstrap modal size class</td>
+                     </tr>
+                     <tr>
+                        <td>center</td>
+                        <td><code>boolean</code></td>
+                        <td><code>true</code></td>
+                        <td>Position the modal in the center of the screen</td>
+                     </tr>
+                     <tr>
+                        <td>animation</td>
+                        <td><code>boolean</code></td>
+                        <td><code>true</code></td>
+                        <td>Provides animated effects on modal</td>
+                     </tr>
+                     <tr>
+                        <td>title</td>
+                        <td><code>string</code></td>
+                        <td><code>Modal Title</code></td>
+                        <td>Title for your modal</td>
+                     </tr>
+                     <tr>
+                        <td>closeButton</td>
+                        <td><code>boolean</code></td>
+                        <td><code>true</code></td>
+                        <td>Close button for modal</td>
+                     </tr>
+                     <tr>
+                        <td>header</td>
+                        <td><code>boolean</code></td>
+                        <td><code>true</code></td>
+                        <td>Modal header</td>
+                     </tr>
+                     <tr>
+                        <td>bodyClass</td>
+                        <td><code>string</code></td>
+                        <td><code>null</code></td>
+                        <td>Classes for modal body, for example <code>my-modal body-class</code></td>
+                     </tr>
+                     <tr>
+                        <td>footerClass</td>
+                        <td><code>string</code></td>
+                        <td><code>null</code></td>
+                        <td>Classes for modal footer, for example <code>my-modal footer-class</code></td>
+                     </tr>
+                     <tr>
+                        <td>body</td>
+                        <td><code>string</code></td>
+                        <td><code>null</code></td>
+                        <td>Content for your modal, can be <code>string</code> or <i>selector</i>, for example: <code>#modal-login-part</code> and add the <code>modal-part</code> class to the element.</td>
+                     </tr>
+                     <tr>
+                        <td>buttons</td>
+                        <td><code>object</code></td>
+                        <td><code>[]</code></td>
+                        <td>
+                           Add some buttons to the modal footer, for example: 
+                           <pre data-name="Modal Buttons" class="language-js code-toolbar"><code class=" language-js"><span class="token punctuation">[</span><span class="token punctuation">{</span>
+         submit<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token operator">|</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+         <span class="token keyword">class</span><span class="token punctuation">:</span> <span class="token string">'custom-class'</span><span class="token punctuation">,</span>
+         id<span class="token punctuation">:</span> <span class="token string">'my-id'</span><span class="token punctuation">,</span>
+         text<span class="token punctuation">:</span> <span class="token string">'Submit'</span><span class="token punctuation">,</span>
+         handler<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+         <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Clicked'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token punctuation">}</span>
+         <span class="token punctuation">}</span><span class="token punctuation">]</span></code><div class="toolbar"><div class="toolbar-item"><span>Js</span></div><div class="toolbar-item"><a>Copy</a></div></div></pre>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>autoFocus</td>
+                        <td><code>boolean</code></td>
+                        <td><code>true</code></td>
+                        <td>Automatic focus on the first input element in the modal body (if any)</td>
+                     </tr>
+                     <tr>
+                        <td>created</td>
+                        <td><code>function</code></td>
+                        <td><code>null</code></td>
+                        <td>Callback when a modal element has been created</td>
+                     </tr>
+                     <tr>
+                        <td>appended</td>
+                        <td><code>function</code></td>
+                        <td><code>null</code></td>
+                        <td>Callback when a modal element has been appended to the document body</td>
+                     </tr>
+                     <tr>
+                        <td>submit</td>
+                        <td><code>function</code></td>
+                        <td><code>null</code></td>
+                        <td>Callback when the form in the modal body is submitted</td>
+                     </tr>
+                     <tr>
+                        <td>modal</td>
+                        <td><code>object</code></td>
+                        <td><code>{}</code></td>
+                        <td>Bootstrap modal options, <a href="https://getbootstrap.com/docs/4.1/components/modal/#options">click here</a> for details</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="d-flex justify-content-lg-end"><a href="#/en/2.3/javascript/chat" class="btn btn-white btn-icon icon-right btn-lg">Next: Chat <i class="fas fa-chevron-right"></i></a></div>
+         
+                      
+
+
+
+            </div>
+         </section>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- General JS Scripts -->
+  <script src="../assets/modules/jquery.min.js"></script>
+  <script src="../assets/modules/popper.js"></script>
+  <script src="../assets/modules/tooltip.js"></script>
+  <script src="../assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="../assets/modules/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.8/marked.min.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="../assets/modules/prism/prism.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  <script src="../assets/modules/sticky-kit.js"></script>
+  <script src="../assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+  <!-- Template JS File -->
+  <script src="https://unpkg.com/navigo@6.0.2/lib/navigo.min.js"></script>
+</body>
+</html>

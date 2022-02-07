@@ -1,0 +1,13 @@
+<script>
+    
+    (function($){
+      $(window).on("load",function(){
+        
+        $(selectors).mCustomScrollbar({
+          autoHideScrollbar:true,
+          theme:"rounded"
+        });
+        
+      });
+    })(jQuery);
+</script>

@@ -1,0 +1,66 @@
+.top-row {
+	border-radius: 10px;
+	width: 100%;
+}
+
+.main-row { margin-top: 15px; }
+.bbw{border-bottom-width: thin !important;border-bottom:solid .5px #f9f9f9 !important;padding-bottom:20px;}
+
+.panel .menus { font-size: 18px; }
+.panel .edit-item { font-size: 18px; margin-top: 5px;}
+.panel-body .list-group li { font-size: 15px;  }
+
+
+.form-group label { font-size: 14px; }
+
+
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+.input-group-btn .icon-btn {
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+}
+
+.input-group-btn .icon-btn .caret { margin-left:0px !important }
+.input-group-btn>.btn {
+    position: relative;
+}
+
+.iconpicker {
+    min-width: 50px;
+    background-color: #e4e4e4;
+    border-color: #e4e4e4;
+    color: #211f1f;
+}
+
+.iconpicker:hover {
+    min-width: 50px;
+    background-color: #e4e4e4!important;
+    border-color: #e4e4e4!important;
+    color: #211f1f!important;
+}
+.btn-icon {color: #000 !important}
+.btn-icon:hover {color: #000 !important}
+.btn-icon i {font-size:14px !important;}

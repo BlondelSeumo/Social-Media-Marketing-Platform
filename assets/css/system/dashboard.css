@@ -1,0 +1,52 @@
+  #period_loader {height: 100%;width:100%;display: table;}
+  #period_loader i{font-size:60px;display: table-cell; vertical-align: middle;padding:30px 0;}
+  .progress { height: 0.6rem;border-radius: 1rem; }
+  .latest_section .card { min-height: 395px; }
+
+  .text-secondary2 { color: #9c299f; }
+
+  .bg-warning.radial {
+      background: #f1ea07;
+      background-image: radial-gradient(circle 248px at center,#f1ea07,#f10707);
+      border: 0 solid hsla(0,0%,100%,.125);
+  }
+  .social_shared_icon {
+      width: 40px;
+      height: 10px;
+  }
+  .card-body:not('.px-md-4'),.card-header:not('.px-md-4'){padding:0 !important;border: 0 !important;}
+  .card-wrap .progress{height:5px;border-radius: 0;}
+  .card-wrap .progress-bar{width: 33%;height:5px;border: .5px solid #ccc;}
+  .card-wrap .progress-bar:first-child{border-right-width: 0;}
+  .card-wrap .progress-bar:last-child{width: 34%;border-left-width: 0;}
+  .card.border{border-color: #eee !important;}
+  .statistics-box .card .card-stats .card-stats-title i{ font-size:30px;}
+  .statistics-box .card.bg-primary .card-wrap .card-body { font-size:unset !important; }
+  .statistics-box .card .card-wrap .card-body span { font-size:26px !important; }
+  .list-unstyled-border li { border-bottom: none;margin-bottom: 10px !important;padding-top: 0; }
+  .latest_posts li { border: 1px solid rgb(151 151 151 / 13%); }
+  .wizard-steps{display: block;}
+  .wizard-steps .wizard-step:before{content: none;}
+  .wizard-steps .wizard-step{height: 230px;}
+  .wizard-step-icon i{font-size: 65px !important;} 
+  .fs-12 { font-size: 12px !important; }
+  .fs-14 { font-size: 14px !important; }
+  .product-image{height: 80px !important;width: 80px !important; margin-bottom: 0 !important;}
+  #cart_activities,#cart_recent_sales,#recent_subscribers{max-height: 400px;overflow-y:auto;}
+  .dropdown-toggle:hover{text-decoration: none !important;}
+  .latest_posts.list-group-flush:first-child .list-group-item:first-child{border-bottom: 0 !important;}
+  .badge.badge-outline-primary {border: 1px solid var(--blue) !important;}
+  .badge.badge-outline-warning {border: 1px solid #ffc107 !important;}
+  .badge.badge-outline-danger {border: 1px solid #fc544b !important;}
+  .fc-view-harness.fc-view-harness-active.event_row{height: 450px !important;}
+  .card-statistic-2 .statistic-details .statistic-details-item{     width: calc(100% / 3);}
+  .statistic-details .statistic-details-item .detail-value { font-weight: 500; font-size: 18px; }
+  .statistic-details .statistic-details-item .detail-name { 
+   font-weight: 400; 
+   letter-spacing: .5px;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap
+  }
+  .statistic-details .statistic-details-item{padding-bottom: 10px;padding-top:10px ;}
+  .budget-price .budget-price-square{height: 2px;}

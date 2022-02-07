@@ -1,0 +1,169 @@
+/*Width*/
+.min_width_70px{min-width:70px !important;}
+.min_width_100px{min-width:100px !important;}
+.min_width_120px{min-width:120px !important;}
+.min_width_130px{min-width:130px !important;}
+.min_width_150px{min-width:150px !important;}
+.min_width_161px{min-width:161px !important;}
+.min_width_180px{min-width:180px !important;}
+.min_width_190px{min-width:190px !important;}
+.min_width_208px{min-width:208px !important;}
+.min_width_230px{min-width:230px !important;}
+.min_width_250px{min-width:250px !important;}
+.min_width_420px{min-height: 420px}
+.min_width_70{min-width: 70% !important;}
+.min_width_90{min-width: 90% !important;}
+.width_50{width:50% !important;}
+.width_90{width:90% !important;}
+.width_100{width:100% !important;}
+.width_67px{width:67px !important;}
+.width_70px{width:70px !important;}
+.width_90px{width:90px !important;}
+.width_100px{width:100px !important;}
+.width_120px{width:120px !important;}
+.width_135px{width:135px !important;}
+.width_150px{width:150px !important;}
+.width_180px{width:180px !important;}
+.width_200px{width:200px !important;}
+.width_208px{width:208px !important;}
+.max_width_50px{max-width:50px !important;}
+
+
+
+/*Height*/
+.height_50px{height: 50px !important;}
+.height_70px{height: 70px !important;}
+.height_80px{height: 80px !important;}
+.height_100px{height: 100px !important;}
+.height_150px{height: 150px !important;}
+.height_170px{height: 170px !important;}
+.height_180px{height: 180px !important;}
+.height_200px{height: 200px !important;}
+.height_250px{height: 250px !important;}
+.height_275px{height: 275px !important;}
+.height_300px{height: 300px !important;}
+.height_310px{height: 310px !important;}
+.height_400px{height: 400px}
+.height_515px{height: 515px}
+.height_600px{height: 600px}
+.height_310px_overflow_y{overflow-y: auto !important; height: 310px !important;}
+.min_height_165px{min-height: 165px !important;}
+.min_height_250px{min-height: 250px !important;}
+.min_height_290px{min-height: 290px !important;}
+.min_height_310px{min-height: 310px !important;}
+.min_height_375px{min-height: 375px !important;}
+.max_height_45px{max-height:45px !important;}
+.max_height_70px{max-height: 70px !important;}
+.max_height_450px_overflow{overflow: auto !important; max-height: 450px !important;}
+
+
+/*Margin*/
+.margin_30_0px{margin:30px 0 !important;}
+.margin_top_5px{margin-top:5px !important;}
+.margin_top_10px{margin-top:10px !important;}
+.margin_top_15,.margin_top_15px{margin-top: 15px !important;}
+.margin_top_20px{margin-top:20px !important;}
+.margin_top_35px{margin-top:35px !important;}
+.margin_top_50px{margin-top:50px !important;}
+.margin_bottom_12px{margin-bottom: 12px !important;}
+.margin_bottom_13px{margin-bottom: 13px !important;}
+.margin_bottom_20px{margin-bottom: 20px !important;}
+.margin_bottom_40px{margin-bottom: 40px !important;}
+.margin_left_45px{margin-left: 45px !important;}
+.margin_left_47px_neg{margin-left:-47px !important;}
+
+/*Padding*/
+.padding_0{padding: 0 !important;}
+.padding_20px{padding: 20px !important;}
+.padding_25px{padding: 25px !important;}
+.padding_bottom_0{padding-bottom: 0 !important;}
+.padding_bottom_50px{padding-bottom: 50px !important;}
+.padding_bottom_55px{padding-bottom: 55px !important;}
+.padding_top_0{padding-top: 0 !important;}
+.padding_top_10{padding-top: 10px !important;}
+.padding_top_15{padding-top: 15px !important;}
+.padding_top_18{padding-top: 18px !important;}
+.padding_top_20{padding-top: 20px !important;}
+.padding_top_80px{padding-top: 80px !important;}
+.padding_0_0_0_9px{padding: 0px 0px 0 9px !important;}
+.padding_10_10_0_25px{padding: 10px 10px 0 25px !important;}
+.padding_10_20_10_20px{padding: 10px 20px 10px 20px !important;}
+.padding_0_10px{padding: 0 10px !important;}
+.padding_0_20px{padding-left: 20px !important; padding-right: 20px !important;}
+.padding_0_45px{padding-left: 45px !important; padding-right: 45px !important;}
+
+
+/*Font*/
+.font_size_9px{font-size: 9px !important;}
+.font_size_10px{font-size: 10px !important;}
+.font_size_12px{font-size: 12px !important;}
+.font_size_16px{font-size: 16px !important;}
+.font_size_18px{font-size: 18px !important;}
+.font_size_20px{font-size: 20px !important;}
+.font_size_25px{font-size: 25px !important;}
+.font_size_35px{font-size: 35px !important;}
+.font_size_40px{font-size: 40px !important;}
+.font_size_60px{font-size: 60px !important;}
+.font_size_70px{font-size: 70px !important;}
+.font_weight_bold{font-weight: bold !important;}
+
+
+/*Color*/
+.black_color{color:#000 !important;}
+.white_color{color:white !important;}
+.DD4B39_color{color:#DD4B39 !important;}
+.c13d408_color{color:#13d408 !important;}
+.c6777ef_color{color:var(--blue) !important;}
+.bg_fefefe{background-color: #fefefe !important;}
+.bg_dddddd{background-color: #dddddd !important;}
+.bg_ffffff{background: #ffffff !important;}
+.bg_f5f4f4{background: #F5F4F4 !important;}
+.bg_151515{background: #151515 !important;}
+.bg_f1f1f1{background: #f1f1f1 !important;}
+.border_color_6777EF{border-color:var(--blue) !important;}
+.dee2e6_border{border:.5px solid #dee2e6 !important;}
+.f9f9f9_border{border:.5px solid #f9f9f9 !important;}
+.e4e6fc_border_dashed{border: 1px dashed #e4e6fc !important; padding: 10px !important;}
+
+/*Postion*/
+.top_8px{top:8px !important;}
+.top_10px{top:10px !important;}
+
+/*Others*/
+.d_none{display: none;} /*do not use important*/
+.d_inherit{display: inherit;} /*do not use important*/
+.d_block{display: block;} /*do not use important*/
+.d_inline{display: inline;} /*do not use important*/
+.no_decoration{text-decoration: none !important;}
+.video_lists_css{margin-left: 10px !important; margin-right: 10px !important;margin-top: 20px !important;}
+.right_unset{right: unset !important;}
+.cursor_pointer{cursor:pointer !important;}
+.youtube_video_search_action_dropdown_menu{position: absolute !important; will-change: transform !important; top: 0px !important; left: 0px !important; transform: translate3d(0px, 20px, 0px) !important;}
+.border_none{border:none !important;}
+.dataTable_checkbox{vertical-align:middle !important;width:20px !important;}
+.addon_menu_sidebar{font-size:9px !important;padding:4px 3px !important;}
+.waiting_spinner_css{width: 100% !important;margin: 20px 0 !important;}
+.waiting_spinner_edit_video_css{width: 100% !important;margin: 30px 0 !important;}
+.box_shadow_none{box-shadow: none !important;}
+.just_validation{max-width: 82% !important;margin:0 auto !important;}
+.price_table_scroll_css{height: 300px !important;overflow-y: auto !important;}
+.visibility_animation{visibility: visible !important; animation-name: fadeIn !important;}
+.customer_review_css{text-align: center !important; font-weight: bold !important;border-radius: 60px !important;width: 40% !important;box-shadow: 2px 2px 2px #aaa, -1px 0 1px #aaa !important;position: relative !important;left: 170px !important;margin: 5px 0px !important; padding: 0 1px !important;}
+.justify_normal{text-align: justify !important; font-weight: normal !important;}
+.justify_normal_black_padded{text-align: justify !important; font-style: normal !important; color: #000 !important;padding:10px 20px !important;}
+.paypal_form_action_css{padding: 0 !important; margin: 0 !important;}
+.pay_with_paypal_css{background:#FFC439 !important;color:#000}
+.cookie_content_css{font-size: 16px; color:#fff;text-decoration: none;}
+.line_height_12px{line-height: 12px !important;}
+#mp-spinner{position: absolute !important;top: 0 !important;left: 0 !important;width: 100% !important;height: 100% !important;background: #ffffff !important;}
+.no_hover:hover{text-decoration: none;}
+.instagram_padded_bordered_background_schedule_block{padding:30px 30px 20px 30px !important; border:1px solid #f9f9f9 !important; background: #FAFDFB !important;}
+.instagram_padded_bordered_background_schedule_block2{padding:20px !important; border:1px solid #ccc !important; background: #fcfcfc !important;}
+.instagram_relative_top_right_22px{position: relative !important;right: 22px;top: 32px !important;}
+.instagram_border_margined_padded{margin-top: 10px !important; border: 1px dashed #ccc !important; padding: 10px !important;}
+.instagram_border_margined_padded2{border: 1px dashed #e4e6fc !important; padding: 10px !important; margin-bottom: 50px !important;}
+.instagram_border_padded{border: 1px dashed #e4e6fc !important;padding: 10px !important;}
+.instagram_border_padded2{border: 1px dashed #e4e6fc !important; padding: 20px !important; margin-bottom: 50px !important;}
+.instagram_border_padded3{margin-top: 10px !important; border: 1px solid #e4e6fc !important; padding: 10px !important;}
+.instagram_bg_f5f5f5_border_padded{background: #F5F5F5 !important; border: 1px solid #ccc !important; padding: 10px !important;}
+.instagram_height_width_40px_bordered{height:40px !important;width:40px !important;border:1px solid #eee !important;}

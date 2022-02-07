@@ -1,0 +1,208 @@
+
+.hero-area {
+    padding-top: 160px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @media #{$lg} {
+        padding-top: 180px;
+    }
+
+    .hero-content {
+        padding-bottom: 80px;
+
+        h2 {
+            font-size: 55px;
+            line-height: 65px;
+            font-weight: 700;
+            margin-bottom: 30px;
+
+            @media #{$lg} {
+                font-size: 42px;
+                line-height: 55px;
+            }
+
+            @media #{$xs} {
+                font-size: 38px;
+                line-height: 50px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            line-height: 28px;
+        }
+
+        .hero-btns {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .main-btn {
+                margin-right: 40px;
+                margin-bottom: 20px;
+
+                @media #{$lg} {
+                    margin-right: 20px;
+                }
+            }
+
+            .watch-btn {
+                margin-bottom: 20px;
+
+                i {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 3px solid #a866d1;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 45px;
+                    background: $gradient-4;
+                    @include text-gradient;
+                }
+
+                span {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-left: 20px;
+                    display: inline-block;
+                    color: $body-color;
+                    @include transition(.3s);
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+
+                    @media #{$lg} {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .counter-up {
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 30px;
+
+        .single-counter {
+            padding: 0 40px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 24px;
+                background: rgba($body-color, .6);
+                right: 0;
+                top: 10px;
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            span {
+                text-align: center;
+                display: block;
+                font-size: 20px;
+                font-weight: 600;
+
+                @media #{$xs} {
+                    font-size: 16px;
+                }
+                @media #{$sm} {
+                    font-size: 18px;
+                }
+                
+                &.countup {
+                    font-size: 30px;
+                    font-weight: 700;
+
+                    @media #{$xs} {
+                        font-size: 20px;
+                    }
+                    @media #{$sm} {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-img {
+        
+
+        .img-screen {
+            position: absolute;
+            z-index: -1;
+
+            @media #{$laptop} {
+                width: 40%;
+            }
+            @media #{$lg} {
+                width: 40%;
+            }
+            @media #{$md} {
+                display: none;
+            }
+            @media #{$xs} {
+                display: none;
+            }
+
+            &.screen-1 {
+                right: 25%;
+                bottom: -350px;
+
+                @media #{$laptop} {
+                    right: 0;
+                }
+                @media #{$lg} {
+                    right: 0;
+                }
+            }
+
+            &.screen-2 {
+                bottom: 60px;
+                right: -220px;
+
+                @media #{$laptop} {
+                    bottom: 180px;
+                    right: -276px;
+                }
+                @media #{$lg} {
+                    bottom: 180px;
+                    right: -276px;
+                }
+            }
+
+            &.screen-3 {
+                right: -125px;
+                bottom: -475px;
+
+                @media #{$laptop} {
+                    right: -250px;
+                    bottom: -250px;
+                }
+                @media #{$lg} {
+                    right: -180px;
+                    bottom: -160px;
+                }
+            }
+        }
+    }
+}
+

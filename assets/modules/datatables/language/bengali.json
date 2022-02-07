@@ -1,0 +1,21 @@
+{
+	"sEmptyTable":     "কোন এন্ট্রি খুঁজে পাওয়া যায় নাই",	
+	"sInfoFiltered":   "(মোট _MAX_ টা এন্ট্রির মধ্যে থেকে বাছাইকৃত)",
+	"sInfoPostFix":    "",
+	"sInfoThousands":  ",",
+	"sLoadingRecords": "লোড হচ্ছে ...",
+	"sProcessing":     "প্রসেসিং হচ্ছে...",
+	"sZeroRecords":    "আপনি যা অনুসন্ধান করেছেন তার সাথে মিলে যাওয়া কোন রেকর্ড খুঁজে পাওয়া যায় নাই",
+	"oPaginate": {
+		"sFirst":    "প্রথমটা",
+		"sLast":     "শেষেরটা",
+		"sNext":     "পরবর্তীটা",
+		"sPrevious": "আগেরটা"
+	},
+	"pSearch": "অনুসন্ধান করুন",
+	"oAria": {
+		"sSortAscending":  ": কলাম আরোহণ সাজানোর জন্য সক্রিয় করুন",
+		"sSortDescending": ": কলামটি অবতরণকে সাজানোর জন্য সক্রিয় করুন"
+	},
+	"sSearchPlaceholder": "অনুসন্ধান করুন ..."
+}

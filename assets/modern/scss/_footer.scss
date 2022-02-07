@@ -1,0 +1,132 @@
+
+
+.footer-area {
+    background-image: url('../images/footer-bg.png');
+    padding-top: 365px;
+
+
+    .footer-widget {
+        margin-bottom: 60px;
+
+        h4 {
+            margin-bottom: 35px;
+
+            @media #{$lg} {
+                font-size: 18px;
+            }
+        }
+
+        a, p {
+            font-size: 16px;
+            line-height: 26px;
+            color: $black-soft;
+        }
+
+        ul {
+
+            li {
+
+                a {
+                    line-height: 32px;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            li {
+                margin-right: 15px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background: $white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include transition(.3s);
+
+                    &.facebook {
+                        color: $facebook;
+
+                        &:hover {
+                            background: $facebook;
+                            color: $white;
+                        }
+                    }
+                    &.twitter {
+                        color: $twitter;
+
+                        &:hover {
+                            background: $twitter;
+                            color: $white;
+                        }
+                    }
+                    &.instagram {
+                        color: $instagram;
+
+                        &:hover {
+                            background: $instagram;
+                            color: $white;
+                        }
+                    }
+                    &.linkedin {
+                        color: $linkedin;
+
+                        &:hover {
+                            background: $linkedin;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .subscribe-form {
+            overflow: hidden;
+
+            input {
+                padding: 17px 25px;
+            }
+
+            button {
+                padding: 17px 40px;
+                float: right;
+                clear: both;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .footer-cradit {
+        padding: 35px 0;
+        border-top: 1px solid rgba($black-soft, .32);
+
+        p {
+            color: $black-soft;
+            font-size: 14px;
+
+            a {
+                color: $body-color;
+                @include transition(.3s);
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

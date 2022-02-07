@@ -1,0 +1,126 @@
+
+.pricing-area {
+
+    .single-price {
+        border-radius: 10px;
+        background: $white;
+        @include box-shadow(0px -31px 51px rgba(165, 165, 165, 0.16));
+        padding: 40px 50px 0;
+        margin-bottom: 60px;
+        @include transition(.3s);
+
+        .price-icon {
+            margin-bottom: 25px;
+        }
+
+        h4 {
+            font-size: 23px;
+            font-weight: 600;
+        }
+
+        .package-price {
+            color: $theme-color;
+        }
+
+        .package-details {
+            margin-bottom: 30px;
+
+            li {
+                font-size: 16px;
+                line-height: 32px;
+                color: $black-soft;
+            }
+        }
+
+        .price-btn {
+            padding: 12px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            background: $black-soft;
+            margin-bottom: -25px;
+        }
+
+        &:hover {
+            @include box-shadow(0px 0px 51px rgba(165, 165, 165, 0.16));
+
+            .price-icon {
+                border-radius: 50%;
+            }
+        }
+        
+        &.active {
+            @include box-shadow(0px 0px 51px rgba(165, 165, 165, 0.16));
+
+            .price-btn {
+                background: $gradient-2;
+            }
+        }
+    }
+
+    .pricing-nav {
+
+        .nav-pills {
+            .nav-item {
+                .nav-link {
+                    color: $body-color;
+                    font-size: 18px;
+                    font-weight: 600;
+                    @include transition(.3s);
+                    position: relative;
+                    z-index: 1;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 100%;
+                        background: $gradient-2;
+                        left: 0;
+                        top: 0;
+                        z-index: -1;
+                        border-radius: inherit;
+                        @include transition(.3s);
+                    }
+
+                    &.active {
+                        color: $white;
+                        background: none;
+
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        // .switch-btn {
+        //     margin: 0 20px;
+        //     width: 54px;
+        //     height: 29px;
+        //     background: $gradient-2;
+        //     border-radius: 15px;
+        //     position: relative;
+        //     @include transition(.3s);
+        //     cursor: pointer;
+
+        //     &::after {
+        //         content: '';
+        //         position: absolute;
+        //         width: 25px;
+        //         height: 25px;
+        //         border-radius: 50%;
+        //         background: $white;
+        //         top: 2px;
+        //         left: 2px;
+        //         @include transition(.3s);
+        //     }
+
+        //     &.active {
+        //         &::after {
+        //             left: calc(100% - 27px);
+        //         }
+        //     }
+        // }
+    }
+}

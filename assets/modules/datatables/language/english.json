@@ -1,0 +1,21 @@
+{
+	"sEmptyTable":     "No data available in table",	
+	"sInfoFiltered":   "(filtered from _MAX_ total entries)",
+	"sInfoPostFix":    "",
+	"sInfoThousands":  ",",
+	"sLoadingRecords": "Loading...",
+	"sProcessing":     "Processing...",
+	"sZeroRecords":    "No matching records found",
+	"oPaginate": {
+		"sFirst":    "First",
+		"sLast":     "Last",
+		"sNext":     "Next",
+		"sPrevious": "Previous"
+	},
+	"pSearch": "Search",
+	"oAria": {
+		"sSortAscending":  ": activate to sort column ascending",
+		"sSortDescending": ": activate to sort column descending"
+	},
+	"sSearchPlaceholder": "Search..."
+}

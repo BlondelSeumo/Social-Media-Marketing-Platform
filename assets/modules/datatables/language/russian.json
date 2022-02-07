@@ -1,0 +1,21 @@
+{
+  "sEmptyTable":     "Данные отсутствуют в таблице",  
+  "sInfoFiltered":   "(отфильтровано по итоговым записям _MAX_)",
+  "sInfoPostFix":    "",
+  "sInfoThousands":  ",",
+  "sLoadingRecords": "Loading...",
+  "sProcessing":     "Обработка ...",
+  "sZeroRecords":    "Совпадающих записей не найдено",
+  "oPaginate": {
+    "sFirst":    "Первый",
+    "sLast":     "Прошлой",
+    "sNext":     "следующий",
+    "sPrevious": "предыдущий"
+  },
+  "pSearch": "Поиск",
+  "oAria": {
+    "sSortAscending":  ": активировать для сортировки столбцов по возрастанию",
+    "sSortDescending": ": активировать для сортировки столбца по убыванию"
+  },
+  "sSearchPlaceholder": "Поиск..."
+}

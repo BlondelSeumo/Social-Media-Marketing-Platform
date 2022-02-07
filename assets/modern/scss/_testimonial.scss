@@ -1,0 +1,98 @@
+
+.testimonial-area {
+
+    .single-testimonial {
+        padding: 48px 35px 35px;
+        border-radius: 25px;
+        position: relative;
+        z-index: 1;
+        margin: 76px 0;
+
+        svg {
+            position: absolute;
+            top: -76px;
+            left: -76px;
+            z-index: -1;
+        }
+
+
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 30px;
+
+            .client-info {
+                display: flex;
+                align-items: flex-start;
+
+                .client-img {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                }
+
+                .client-details {
+
+                    h6 {
+                        font-size: 17px;
+                        font-weight: 600;
+                    }
+                    span {
+                        font-size: 14px;
+                        color: $black-soft;
+                    }
+                }
+            }
+
+            .client-rating {
+                span {
+                    margin-left: 10px;
+                    font-size: 18px;
+                    color: #E96A20;
+
+                    &.not-rated {
+                        color: #DBBFAE;
+                    }
+                }
+            }
+        }
+
+        .quote {
+            margin-bottom: 20px;
+
+            i {
+                font-size: 40px;
+                @include text-gradient;
+            }
+        }
+
+    }
+
+    .testimonial-slider-wrapper {
+        position: relative;
+
+        .tns-controls {
+            position: absolute;
+            top: -20px;
+            right: 0;
+            left: auto;
+            z-index: 9;
+
+            button {
+                border: none;
+                background: none;
+                font-size: 30px;
+                color: $body-color;
+                margin-left: 10px;
+                @include transition(.3s);
+                padding: 10px;
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

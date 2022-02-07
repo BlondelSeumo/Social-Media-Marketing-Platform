@@ -1,0 +1,21 @@
+{
+	"sEmptyTable":     "Nessun dato disponibile nella tabella",	
+	"sInfoFiltered":   "(filtrato da _MAX_ voci totali)",
+	"sInfoPostFix":    "",
+	"sInfoThousands":  ",",
+	"sLoadingRecords": "Caricamento in corso...",
+	"sProcessing":     "In lavorazione...",
+	"sZeroRecords":    "nessuna corrispondenza trovata",
+	"oPaginate": {
+		"sFirst":    "Prima",
+		"sLast":     "Scorsa",
+		"sNext":     "Il prossimo",
+		"sPrevious": "Precedente"
+	},
+	"pSearch": "Ricerca",
+	"oAria": {
+		"sSortAscending":  ": attiva per ordinare la colonna in ordine crescente",
+		"sSortDescending": ": attiva per ordinare la colonna in ordine decrescente"
+	},
+	"sSearchPlaceholder": "Ricerca..."
+}

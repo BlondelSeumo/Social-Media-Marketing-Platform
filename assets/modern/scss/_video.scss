@@ -1,0 +1,56 @@
+
+.video-area {
+
+    .video-header {
+        padding-top: 100px;
+        padding-bottom: 180px;
+        background-image: url('../images/video-bg.svg');
+        border-radius: 15px;
+        position: relative;
+        z-index: 1;
+
+        @media #{$xs} {
+            padding-bottom: 100px;
+        }
+    }
+
+    .video-frame {
+        position: relative;
+        margin: auto;
+        margin-top: -240px;
+        z-index: 2;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media #{$xs} {
+            margin-top: -150px;
+        }
+
+        a {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 80px;
+            background: $gradient-2;
+            color: $white;
+
+            &.btn-hover {
+
+                &::after {
+                    width: 100%;
+                    @include transform(scale(0));
+                    background: rgba($white, .15);
+                }
+                &:hover {
+                    &::after {
+                        @include transform(scale(1.3));
+                    }
+                }
+            }
+        }
+    }
+}

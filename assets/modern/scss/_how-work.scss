@@ -1,0 +1,116 @@
+
+.how-work-area {
+
+    @media #{$md} {
+        padding-top: 100px;
+    }
+    @media #{$xs} {
+        padding-top: 100px;
+    }
+    .how-work-img {
+        position: relative;
+        z-index: 1;
+
+        @media #{$md} {
+            margin-bottom: 50px;
+        }
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+
+        .dots-shape {
+            position: absolute;
+            z-index: -1;
+            right: 30px;
+            bottom: 0;
+        }
+    }
+
+    .accordion-btn {
+
+        button {
+            .icon-style {
+                border-radius: 50%;
+            }
+            &.collapsed {
+                .icon-style {
+                    border-radius: 5px;
+                }
+            }
+            &:hover {
+                .icon-style {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+}
+
+.accordion-style {
+
+    .single-accordion {
+        border-radius: 10px;
+        background: $white;
+        @include box-shadow(0px 0px 51px rgba(180, 180, 180, 0.16));
+
+        .accordion-btn {
+            button {
+                padding: 18px 30px;
+                padding-right: 50px;
+                font-size: 23px;
+                font-weight: 600;
+                text-decoration: none;
+                border: none;
+                background: $white;
+                position: relative;
+                white-space: normal;
+                @include transition(.3s);
+                color: $theme-color;
+
+                @media #{$lg} {
+                    font-size: 20px;
+                }
+                @media #{$md} {
+                    font-size: 20px;
+                }
+                @media #{$xs} {
+                    font-size: 16px;
+                }
+                @media #{$sm} {
+                    font-size: 18px;
+                }
+
+                &.collapsed {
+                    color: $body-color;
+                }
+
+                &:hover {
+                    color: $theme-color;
+                }
+
+                &.collapsed::after {
+                    transform: rotate(180deg) translateY(50%);
+                }
+                &::after {
+                    font: normal normal normal 1em/1 "LineIcons";
+                    content: "\ea5e";
+                    position: absolute;
+                    right: 30px;
+                    top: 50%;
+                    transform: rotate(0deg) translateY(-50%);
+                    font-size: 20px;
+                    @include transition(.3s);
+                }
+
+                .icon-style {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .accordion-content {
+            padding: 10px 30px 30px;
+        }
+    }
+}

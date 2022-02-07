@@ -1,0 +1,10 @@
+{
+    "require": {
+        "php-http/guzzle6-adapter": "^1.1",
+        "guzzlehttp/psr7": "^1.3",
+        "php-http/message": "^1.4",
+        "happyr/linkedin-api-client": "^1.0",
+        "php-http/curl-client": "^1.6",
+        "guzzlehttp/guzzle": "~4.0"
+    }
+}

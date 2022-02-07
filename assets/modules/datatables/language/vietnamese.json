@@ -1,0 +1,21 @@
+{
+	"sEmptyTable":     "không có dữ liệu trong bảng",	
+	"sInfoFiltered":   "(được lọc từ _MAX_ tổng số mục)",
+	"sInfoPostFix":    "",
+	"sInfoThousands":  ",",
+	"sLoadingRecords": "Đang tải...",
+	"sProcessing":     "Chế biến...",
+	"sZeroRecords":    "Không tìm thấy kết quả",
+	"oPaginate": {
+		"sFirst":    "Đầu tiên",
+		"sLast":     "Cuối cùng",
+		"sNext":     "Kế tiếp",
+		"sPrevious": "Trước"
+	},
+	"pSearch": "Tìm kiếm",
+	"oAria": {
+		"sSortAscending":  ": kích hoạt để sắp xếp cột tăng dần",
+		"sSortDescending": ": kích hoạt để sắp xếp cột giảm dần"
+	},
+	"sSearchPlaceholder": "Tìm kiếm..."
+}

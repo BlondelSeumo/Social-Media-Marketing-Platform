@@ -1,0 +1,21 @@
+{
+	"sEmptyTable":     "δεν υπάρχουν διαθέσιμα δεδομένα στο τραπέζι",	
+	"sInfoFiltered":   "(φιλτράρεται από _MAX_ συνολικές καταχωρήσεις)",
+	"sInfoPostFix":    "",
+	"sInfoThousands":  ",",
+	"sLoadingRecords": "Φόρτωση...",
+	"sProcessing":     "Επεξεργασία...",
+	"sZeroRecords":    "Δεν βρέθηκαν αντίστοιχες εγγραφές",
+	"oPaginate": {
+		"sFirst":    "Πρώτα",
+		"sLast":     "τελευταίος",
+		"sNext":     "Επόμενο",
+		"sPrevious": "Προηγούμενος"
+	},
+	"pSearch": "Αναζήτηση",
+	"oAria": {
+		"sSortAscending":  ": ενεργοποίηση για ταξινόμηση ανόδου στήλης",
+		"sSortDescending": ": ενεργοποίηση για ταξινόμηση φθίνουσας στήλης"
+	},
+	"sSearchPlaceholder": "Αναζήτηση..."
+}

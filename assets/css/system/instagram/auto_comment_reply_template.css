@@ -1,0 +1,12 @@
+.button{
+    margin-top: 10px;
+}
+.datagrid-body
+{
+  overflow: hidden !important; 
+}
+
+.emojionearea, .emojionearea.form-control
+{
+    height: 150px !important;
+}

@@ -1,0 +1,14 @@
+ RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php?/$0 [PT,L] 
+
+<Files ~ "^.*\.([Pp][Hh][Pp])"> #PHP protection
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<Files index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>

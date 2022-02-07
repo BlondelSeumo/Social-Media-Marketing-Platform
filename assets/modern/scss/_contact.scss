@@ -1,0 +1,40 @@
+
+.contact-area {
+
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+
+        @media #{$xs} {
+            font-size: 20px;
+        }
+        @media #{$sm} {
+            font-size: 26px;
+        }
+    }
+
+    .contact-form-wrapper {
+
+        .contact-form {
+
+            button {
+                font-weight: 700;
+                padding: 17px 40px;
+
+                &.btn-hover {
+                    &::after {
+                        width: 40%;
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        &::after {
+                            opacity: 1;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

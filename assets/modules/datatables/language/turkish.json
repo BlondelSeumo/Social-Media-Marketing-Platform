@@ -1,0 +1,21 @@
+{
+	"sEmptyTable":     "Tabloda veri yok",	
+	"sInfoFiltered":   "(toplam _MAX_ girişten filtrelendi)",
+	"sInfoPostFix":    "",
+	"sInfoThousands":  ",",
+	"sLoadingRecords": "Yükleniyor...",
+	"sProcessing":     "İşleme...",
+	"sZeroRecords":    "Hiçbir eşleşen kayıt bulunamadı",
+	"oPaginate": {
+		"sFirst":    "İlk",
+		"sLast":     "Son",
+		"sNext":     "Sonraki",
+		"sPrevious": "Önceki"
+	},
+	"pSearch": "Arama",
+	"oAria": {
+		"sSortAscending":  ": artan sütun sıralamak için etkinleştir",
+		"sSortDescending": ": azalan sütun sıralamasını etkinleştir"
+	},
+	"sSearchPlaceholder": "Arama..."
+}

@@ -1,0 +1,94 @@
+
+
+.feature-area {
+
+    .single-feature {
+        padding: 45px 30px;
+        border-radius: 10px;
+        background: $white;
+        position: relative;
+        @include transition(.3s);
+        @include box-shadow(0px -33px 51px rgba(209, 209, 209, 0.16));
+        overflow: hidden;
+
+        @media #{$lg} {
+            padding: 40px 20px;
+        }
+
+        @media #{$md} {
+            margin-bottom: 30px;
+        }
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            @include transition(.3s);
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+        &.item-1::after {
+            background: $gradient-1;
+        }
+        &.item-2::after {
+            background: $gradient-2;
+        }
+        &.item-3::after {
+            background: $gradient-3;
+        }
+        &.item-4::after {
+            background: $gradient-4;
+        }
+
+        &:hover {
+            @include box-shadow(0px 0px 51px rgba(165, 165, 165, 0.26));
+
+            &::after {
+                width: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .feature-icon {
+                border-radius: 50%;
+            }
+        }
+
+        .feature-content {
+
+            h4 {
+                margin-bottom: 20px;
+                font-size: 23px;
+                font-weight: 600;
+
+                @media #{$lg} {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                color: $black-soft;
+            }
+        }
+    }
+}
+.icon-style {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    @include transition(.3s);
+}

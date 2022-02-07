@@ -1,0 +1,15 @@
+.dropdown-toggle::before{content:none !important;}
+#page_id{width: 150px;}
+#campaign_name{max-width: 30%;}
+@media (max-width: 575.98px) {
+  #page_id{width: 90px !important;}
+  #campaign_name{max-width: 50% !important;}
+}
+.smallspace{padding: 10px 0;}
+.lead_first_name,.lead_last_name,.lead_tag_name{background: #fff !important;}
+.ajax-file-upload-statusbar{width: 100% !important;}
+.ajax-upload-dragdrop{width:100% !important;}
+.renew_campaign
+{
+	cursor: pointer;
+}

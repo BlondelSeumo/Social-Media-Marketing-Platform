@@ -1,0 +1,32 @@
+@page{
+  size:80mm 297mm;
+  margin: 0 !important;
+}
+html, body {
+width: 76mm;
+padding:0;
+margin:0;
+}
+#print-area{padding:0 4mm 0 0!important;}
+table{width: 100% !important;padding:0;margin:0;}
+.d-print-none-thermal{display: none;}
+*{color:#000 !important;font-size:12px !important;font-family: Arial;font-style: none !important;font-weight: 600;}
+small,.small{font-size:10px !important;}
+.section,.section-body,.invoice,#d-main-container{width: 100% !important;margin:0 !important;padding:0 !important;border-width: 0 !important;}
+div{margin:5px 0 !important;padding:0 !important;}
+.section-title{margin: 15px 0 0 0 !important;}
+.list-unstyled{list-style: none;padding:0;margin:0;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+h4{font-size: 18px !important;text-align: center;margin:10px 0;}
+h5{font-size: 12px !important;text-align: center;margin:0;}
+.m-0{margin:0 !important;}
+.invoice-detail-name,.invoice-detail-value{margin:0 !important;padding:0 !important;display: inline !important;}
+td,th,tr,table {
+    border-top: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+.price{text-align: right;}
+.alert{display: none}
